@@ -1,6 +1,6 @@
 # Common amlogic policy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/amlogic/sepolicy/common/private
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += device/amlogic/sepolicy/common/public
+PRODUCT_PRIVATE_SEPOLICY_DIRS += device/amlogic/sepolicy/common/private
+PRODUCT_PUBLIC_SEPOLICY_DIRS += device/amlogic/sepolicy/common/public
 BOARD_VENDOR_SEPOLICY_DIRS += device/amlogic/sepolicy/common/vendor
 
 ifneq ($(filter g12a g12b sm1,$(TARGET_AMLOGIC_SOC)),)
