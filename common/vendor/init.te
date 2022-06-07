@@ -14,5 +14,6 @@ allow init param_tv_file:dir mounton;
 allow init tee_data_file:dir mounton;
 
 set_prop(init, vendor_hdmi_prop)
+set_prop(vendor_init, vendor_media_prop);
 
 allow init hwservicemanager:binder call;
