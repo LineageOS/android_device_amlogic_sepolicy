@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "10cb4a08_51b6ff39",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-06-08T03:10:20Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_device_amlogic_sepolicy/+/332353",
+      "parentUuid": "015efb23_2c034c53",
+      "revId": "eba071f6f68fd7dde95bf9842bd513e1f4a4b87f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "50fe8fcc_3fd0d611",
