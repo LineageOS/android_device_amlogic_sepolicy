@@ -11,5 +11,8 @@ vendor.sys.hwc.booted               u:object_r:vendor_boot_prop:s0
 vendor.system.support.dolbyvision   u:object_r:vendor_dolby_prop:s0
 vendor.wlan.driver.version          u:object_r:vendor_wifi_prop:s0
 
+vendor.drm.                         u:object_r:vendor_media_prop:s0
 vendor.media.                       u:object_r:vendor_media_prop:s0
 vendor.display-size                 u:object_r:vendor_netflix_prop:s0
+vendor.netflix.state                u:object_r:vendor_netflix_prop:s0
+ro.vendor.nrdp.                     u:object_r:vendor_netflix_prop:s0
