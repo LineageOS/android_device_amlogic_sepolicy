@@ -3,6 +3,8 @@ type system_control_exec, exec_type, vendor_file_type, file_type;
 
 init_daemon_domain(system_control)
 
+binder_call(system_control, system_app)
+
 allow system_control amvecm_device:chr_file rw_file_perms;
 allow system_control block_device:dir r_dir_perms;
 allow system_control cri_data_block_device:blk_file r_file_perms;
@@ -40,6 +42,7 @@ allow system_control system_control:netlink_kobject_uevent_socket { bind create 
 
 get_prop(system_control, hwservicemanager_prop)
 set_prop(system_control, ctl_stop_prop)
+set_prop(system_control, ctl_default_prop)
 set_prop(system_control, media_prop)
 set_prop(system_control, vendor_boot_prop)
 set_prop(system_control, vendor_display_prop)
