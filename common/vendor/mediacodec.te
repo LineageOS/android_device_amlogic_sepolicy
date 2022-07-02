@@ -4,6 +4,8 @@ allow mediacodec sysfs_graphics_device:dir r_dir_perms;
 allow mediacodec sysfs_graphics_device:file r_file_perms;
 allow mediacodec sysfs_media:file rw_file_perms;
 allow mediacodec sysfs_media:dir r_dir_perms;
+allow mediacodec sysfs_video:file rw_file_perms;
+allow mediacodec sysfs_video:dir r_dir_perms;
 allow mediacodec sysfs_xbmc:file rw_file_perms;
 allow mediacodec media_device:chr_file rw_file_perms;
 allow mediacodec media_device:file rw_file_perms;
@@ -12,6 +14,7 @@ allow mediacodec tee_device:chr_file rw_file_perms;
 allow mediacodec tee_device:file rw_file_perms;
 allow mediacodec video_device:file rw_file_perms;
 allow mediacodec video_device:chr_file rw_file_perms;
+allow mediacodec vendor_video_device:chr_file rw_file_perms;
 
 allow mediacodec hal_graphics_allocator_default_tmpfs:file rw_file_perms;
 
