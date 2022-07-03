@@ -46,6 +46,30 @@
       },
       "revId": "ef10fda8b4143234100b53d50c65f07ebe13a675",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b4e91787_af83059c",
+        "filename": "common/vendor/file_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-07-03T14:18:48Z",
+      "side": 1,
+      "message": "Well, then just prefix above ones with vendor_ too.",
+      "parentUuid": "18bc5c29_d177b1a8",
+      "range": {
+        "startLine": 173,
+        "startChar": 29,
+        "endLine": 173,
+        "endChar": 48
+      },
+      "revId": "ef10fda8b4143234100b53d50c65f07ebe13a675",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
