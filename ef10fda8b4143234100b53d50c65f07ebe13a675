@@ -22,6 +22,30 @@
       },
       "revId": "ef10fda8b4143234100b53d50c65f07ebe13a675",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "18bc5c29_d177b1a8",
+        "filename": "common/vendor/file_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2022-07-03T14:17:06Z",
+      "side": 1,
+      "message": "I was following what stock does. Should I just drop it?",
+      "parentUuid": "b3af4dcf_10db1bfa",
+      "range": {
+        "startLine": 173,
+        "startChar": 29,
+        "endLine": 173,
+        "endChar": 48
+      },
+      "revId": "ef10fda8b4143234100b53d50c65f07ebe13a675",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
