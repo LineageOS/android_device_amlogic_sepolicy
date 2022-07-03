@@ -70,6 +70,30 @@
       },
       "revId": "ef10fda8b4143234100b53d50c65f07ebe13a675",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "408f5d64_60f4a0ae",
+        "filename": "common/vendor/file_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2022-07-03T14:54:45Z",
+      "side": 1,
+      "message": "To be clear, do you want to follow stock labels or make them vendor_?\nOnly /dev/amvideo and /dev/tsync is vendor_video_device, others are video_device.",
+      "parentUuid": "b4e91787_af83059c",
+      "range": {
+        "startLine": 173,
+        "startChar": 29,
+        "endLine": 173,
+        "endChar": 48
+      },
+      "revId": "ef10fda8b4143234100b53d50c65f07ebe13a675",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
