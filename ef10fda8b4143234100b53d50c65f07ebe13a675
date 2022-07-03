@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b3af4dcf_10db1bfa",
+        "filename": "common/vendor/file_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-07-03T14:15:03Z",
+      "side": 1,
+      "message": "Why adding the vendor_ prefix here if above ones don\u0027t have it?",
+      "range": {
+        "startLine": 173,
+        "startChar": 29,
+        "endLine": 173,
+        "endChar": 48
+      },
+      "revId": "ef10fda8b4143234100b53d50c65f07ebe13a675",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
