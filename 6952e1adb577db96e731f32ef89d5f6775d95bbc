@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fc3fd6c6_e34038b7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3917
+      },
+      "writtenOn": "2022-07-17T07:26:15Z",
+      "side": 1,
+      "message": "Fixing: \n[    5.516166] type\u003d1400 audit(1658039494.460:4): avc: denied { read write } for comm\u003d\"android.hardwar\" name\u003d\"amvideo\" dev\u003d\"tmpfs\" ino\u003d322 scontext\u003du:r:hal_graphics_composer_default:s0 tcontext\u003du:object_r:vendor_video_device:s0 tclass\u003dchr_file permissive\u003d0",
+      "revId": "6952e1adb577db96e731f32ef89d5f6775d95bbc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
