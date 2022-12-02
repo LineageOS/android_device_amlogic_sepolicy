@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "49cec6a6_ec7f1278",
+        "filename": "common/vendor/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-12-02T23:49:42Z",
+      "side": 1,
+      "message": "Spaces, not tabs",
+      "revId": "026f78c04c1f3eaaf4f87d730b0c421b156882e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cbed6026_bb6cb6c4",
+        "filename": "common/vendor/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-12-02T23:49:42Z",
+      "side": 1,
+      "message": "Same",
+      "revId": "026f78c04c1f3eaaf4f87d730b0c421b156882e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
