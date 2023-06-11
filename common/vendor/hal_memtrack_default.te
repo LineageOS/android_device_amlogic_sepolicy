@@ -10,6 +10,9 @@ allow hal_memtrack_default hal_health_default:file r_file_perms;
 allow hal_memtrack_default hal_keymaster_default:dir search;
 allow hal_memtrack_default hal_keymaster_default:file r_file_perms;
 
+allow hal_memtrack_default hal_light_default:dir search;
+allow hal_memtrack_default hal_light_default:file r_file_perms;
+
 allow hal_memtrack_default hal_power_default:dir search;
 allow hal_memtrack_default hal_power_default:file r_file_perms;
 
@@ -21,6 +24,9 @@ allow hal_memtrack_default hal_thermal_default:file r_file_perms;
 
 allow hal_memtrack_default hal_tv_cec_default:dir search;
 allow hal_memtrack_default hal_tv_cec_default:file r_file_perms;
+
+allow hal_memtrack_default hal_usb_default:dir search;
+allow hal_memtrack_default hal_usb_default:file r_file_perms;
 
 allow hal_memtrack_default sysfs_mali:dir { r_dir_perms };
 allow hal_memtrack_default sysfs_mali:file { r_file_perms };

@@ -23,6 +23,8 @@ allow mediacodec systemcontrol_hwservice:hwservice_manager find;
 binder_call(mediacodec, system_control)
 
 get_prop(mediacodec, build_bootimage_prop);
+# neverallow
+#get_prop(mediacodec, default_prop)
 get_prop(mediacodec, omx_prop);
 get_prop(mediacodec, vendor_media_prop);
 set_prop(mediacodec, vendor_media_prop);

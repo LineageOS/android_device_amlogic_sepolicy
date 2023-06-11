@@ -40,7 +40,12 @@ allow system_control self:capability net_admin;
 
 allow system_control system_control:netlink_kobject_uevent_socket { bind create read setopt };
 
+# neverallow
+#get_prop(system_control, default_prop)
 get_prop(system_control, hwservicemanager_prop)
+# neverallow
+#get_prop(system_control, system_prop)
+
 set_prop(system_control, ctl_default_prop)
 set_prop(system_control, ctl_stop_prop)
 set_prop(system_control, media_prop)
