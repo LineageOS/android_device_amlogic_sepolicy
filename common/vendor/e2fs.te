@@ -1,0 +1,4 @@
+allow e2fs cache_block_device:blk_file { rw_file_perms ioctl };
+allow e2fs param_block_device:blk_file { rw_file_perms ioctl };
+allow e2fs tee_block_device:blk_file { rw_file_perms ioctl };
+
