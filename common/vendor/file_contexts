@@ -73,6 +73,9 @@
 /vendor/bin/hw/android\.hardware\.drm@1\.4-service\.playready            u:object_r:hal_drm_default_exec:s0
 /vendor/bin/hw/android\.hardware\.drm@1\.4-service\.widevine             u:object_r:hal_drm_default_exec:s0
 
+# Dumpstate
+/vendor/bin/hw/android\.hardware\.dumpstate@1\.1-service\.droidlogic    u:object_r:hal_dumpstate_default_exec:s0
+
 # ESM
 /dev/esm u:object_r:esm_device:s0
 
