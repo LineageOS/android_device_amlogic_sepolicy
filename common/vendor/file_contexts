@@ -40,6 +40,8 @@
 # CEC
 /dev/cec u:object_r:cec_device:s0
 
+/vendor/bin/hdmicecd    u:object_r:hdmicecd_exec:s0
+
 # Display
 /dev/amdolby_vision       u:object_r:graphics_device:s0
 /dev/graphics/fb[0-1]     u:object_r:graphics_device:s0
