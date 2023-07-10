@@ -1,8 +1,5 @@
 allow hal_graphics_allocator_default graphics_device:chr_file r_file_perms;
 
-typeattribute hal_graphics_allocator_default_tmpfs mlstrustedobject;
+allow hal_graphics_allocator_client hal_graphics_allocator_service:service_manager find;
 
-allow {
-    hal_graphics_allocator_client
-    appdomain -isolated_app
-} hal_graphics_allocator_default_tmpfs:file { read write map };
+tmpfs_domain(hal_graphics_allocator_default)

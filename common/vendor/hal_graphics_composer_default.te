@@ -1,3 +1,8 @@
+add_hwservice(hal_graphics_composer_default, meson_display_ipc_hwservice)
+
+hal_client_domain(hal_graphics_composer_default, hal_graphics_allocator)
+hal_client_domain(hal_graphics_composer_default, hal_system_control)
+
 allow hal_graphics_composer_default display_device:chr_file rw_file_perms;
 allow hal_graphics_composer_default graphics_device:file rw_file_perms;
 allow hal_graphics_composer_default vendor_video_device:chr_file rw_file_perms;
@@ -13,13 +18,6 @@ allow hal_graphics_composer_default sysfs_media:file rw_file_perms;
 allow hal_graphics_composer_default kernel:process setsched;
 
 allow hal_graphics_composer_default self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
-
-allow hal_graphics_composer_default mesaon_display_ipc_hwservice:hwservice_manager { add find };
-allow hal_graphics_composer_default systemcontrol_hwservice:hwservice_manager find;
-
-allow hal_graphics_composer_default system_control:binder call;
-
-allow hal_graphics_composer_default hal_graphics_allocator_default_tmpfs:file rw_file_perms;
 
 set_prop(hal_graphics_composer_default, vendor_boot_prop)
 
