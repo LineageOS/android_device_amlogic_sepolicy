@@ -106,7 +106,6 @@
 /sys/module/hdmitx20/parameters/hdmi_authenticated u:object_r:sysfs_hdmi:s0
 
 # Health
-/vendor/bin/hw/android\.hardware\.health@2\.1-service u:object_r:hal_health_default_exec:s0
 /vendor/bin/hw/android\.hardware\.health@2\.1-service.droidlogic u:object_r:hal_health_default_exec:s0
 
 # Keymaster

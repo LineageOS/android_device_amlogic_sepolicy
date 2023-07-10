@@ -1,0 +1,3 @@
+attribute hal_system_control;
+attribute hal_system_control_client;
+attribute hal_system_control_server;
