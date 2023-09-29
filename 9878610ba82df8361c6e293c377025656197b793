@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "96d954a1_d3c3871b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-09-29T16:02:32Z",
+      "side": 1,
+      "message": "Look what this commit uncovered:\n\n\u003e  09-29 17:00:38.303  5309  5628 E vndksupport: Could not load vulkan.amlogic.so from sphal namespace: dlopen failed: \"/vendor/lib/hw/vulkan.amlogic.so\" is too small to be an ELF executable: only found 22 bytes.",
+      "revId": "9878610ba82df8361c6e293c377025656197b793",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
