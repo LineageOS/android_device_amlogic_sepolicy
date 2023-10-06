@@ -183,7 +183,7 @@
 # USB
 /sys/devices/platform/ff400000.dwc2_a/udc/ff400000.dwc2_a(/.*)?        u:object_r:sysfs_usb:s0
 
-/vendor/bin/hw/android\.hardware\.usb\.gadget@1\.2-service\.droidlogic u:object_r:hal_usb_gadget_default_exec:s0
+/vendor/bin/hw/android\.hardware\.usb\.gadget@1\.[1-2]-service\.droidlogic u:object_r:hal_usb_gadget_default_exec:s0
 
 # Video
 /dev/amvideo      u:object_r:vendor_video_device:s0
