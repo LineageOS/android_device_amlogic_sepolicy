@@ -9,4 +9,6 @@ hal_client_domain(hdmicecd, hal_system_control)
 
 allow hdmicecd cec_device:chr_file { open read write ioctl };
 
+allow hdmicecd self:netlink_kobject_uevent_socket { create setopt getopt bind read };
+
 vndbinder_use(hdmicecd)
