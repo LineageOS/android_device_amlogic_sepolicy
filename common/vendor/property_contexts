@@ -12,6 +12,7 @@ vendor.system.support.dolbyvision   u:object_r:vendor_dolby_prop:s0
 vendor.wlan.driver.version          u:object_r:vendor_wifi_prop:s0
 
 vendor.drm.                         u:object_r:vendor_media_prop:s0
+vendor.mali.config                  u:object_r:graphics_config_prop:s0
 vendor.media.                       u:object_r:vendor_media_prop:s0
 vendor.display-size                 u:object_r:vendor_netflix_prop:s0
 vendor.netflix.state                u:object_r:vendor_netflix_prop:s0
