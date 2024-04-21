@@ -48,5 +48,7 @@ allow hal_memtrack_default sysfs_mali:lnk_file r_file_perms;
 allow hal_memtrack_default sysfs_mali:lnk_file r_file_perms;
 allow hal_memtrack_default sysfs_mali:dir search;
 
+r_dir_file(hal_memtrack_default, debugfs_system_ion_heap)
+
 allow hal_memtrack_default vndservicemanager:file r_file_perms;
 allow hal_memtrack_default vndservicemanager:dir search;
