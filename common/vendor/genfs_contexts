@@ -25,3 +25,5 @@ genfscon sysfs /devices/platform/ffe40000.bifrost/power_policy           u:objec
 genfscon sysfs /devices/platform/ffe40000.bifrost/soft_job_timeout       u:object_r:sysfs_graphics_device:s0
 
 genfscon sysfs /module/mali_kbase/version            u:object_r:sysfs_mali:s0
+
+genfscon sysfs /devices/platform/d0074000.emmc/mmc_host/emmc/emmc:0001/block/mmcblk0/queue/discard_max_bytes        u:object_r:sysfs_mmc_host:s0
