@@ -89,6 +89,7 @@
 /dev/di0      u:object_r:display_device:s0
 /dev/display  u:object_r:display_device:s0
 /dev/display2 u:object_r:display_device:s0
+/dev/mali     u:object_r:gpu_device:s0
 /dev/mali0    u:object_r:gpu_device:s0
 
 /sys/devices/platform/ffe40000.bifrost(/.*)? u:object_r:sysfs_mali:s0
