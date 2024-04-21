@@ -1,5 +1,6 @@
 ro.boot.oem.locales     u:object_r:vendor_boot_prop:s0
 
+persist.vendor.sys.cec.autowakeup     u:object_r:vendor_hdmi_prop:s0
 persist.vendor.sys.cec.logicaladdress u:object_r:vendor_hdmi_prop:s0
 persist.vendor.sys.hdr.state          u:object_r:vendor_hdmi_prop:s0
 persist.vendor.sys.sdr.state          u:object_r:vendor_hdmi_prop:s0
