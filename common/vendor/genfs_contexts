@@ -1,3 +1,5 @@
+genfscon debugfs /ion/heaps/vmalloc_ion u:object_r:debugfs_system_ion_heap:s0
+
 genfscon proc /kcore u:object_r:proc_iomem:s0
 
 genfscon proc /sys/vm/min_free_kbytes        u:object_r:proc_vm_writable:s0
