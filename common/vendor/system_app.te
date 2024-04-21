@@ -1,3 +1,5 @@
+binder_use(system_app, system_control)
+
 allow system_app sysfs_power:file r_file_perms;
 
 allow system_app selinuxfs:file r_file_perms;
