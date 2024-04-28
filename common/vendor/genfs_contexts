@@ -9,6 +9,10 @@ genfscon sysfs /devices/platform/bt-dev/rfkill/rfkill0/state u:object_r:sysfs_bl
 genfscon sysfs /devices/platform/ff638000.ddr_bandwidth/extcon/bandwidth/cable.0/name                               u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/soc/ff642000.audiobus/ff642000.audiobus:spdif/extcon/spdifin_event/cable.0/name    u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/soc/ff642000.audiobus/ff642000.audiobus:spdif/extcon/spdifin_event/cable.1/name    u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/soc/ff660000.audiobus/ff660000.audiobus:spdif@0/extcon/spdifin_event/cable.0/name  u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/soc/ff660000.audiobus/ff660000.audiobus:spdif@0/extcon/spdifin_event/cable.1/name  u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/soc/ff663000.bus/ff663800.earc/extcon/earcrx/cable.0/name                          u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/soc/ff663000.bus/ff663800.earc/extcon/earcrx/cable.1/name                          u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/vdin0/vdin/vdin0/vdin0event/cable.0/name                                           u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/vdin1/vdin/vdin1/vdin1event/cable.0/name                                           u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/vout/extcon/setmode/cable.0/name                                                   u:object_r:sysfs_extcon:s0
