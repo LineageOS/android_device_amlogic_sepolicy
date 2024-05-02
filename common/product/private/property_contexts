@@ -7,8 +7,5 @@ media.amnuplayer.audio.delayus      u:object_r:media_prop:s0
 # Bluetooth
 ro.rfkilldisabled    u:object_r:exported_bluetooth_prop:s0 exact string
 
-# Fastbootd
-ro.fastbootd.available    u:object_r:exported_default_prop:s0
-
 # Media
 media.omx.          u:object_r:omx_prop:s0
