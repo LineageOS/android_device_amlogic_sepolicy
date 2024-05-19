@@ -9,3 +9,6 @@ BOARD_VENDOR_SEPOLICY_DIRS += device/amlogic/sepolicy/g12/vendor
 else ifneq ($(filter gxm gxl,$(TARGET_AMLOGIC_SOC)),)
 BOARD_VENDOR_SEPOLICY_DIRS += device/amlogic/sepolicy/gx/vendor
 endif
+
+# Common rules for power-libperfmgr
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
