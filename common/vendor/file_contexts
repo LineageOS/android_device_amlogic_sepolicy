@@ -116,6 +116,10 @@
 /sys/module/hdmitx20/parameters/hdmi_authenticated u:object_r:sysfs_hdmi:s0
 
 # Health
+/sys/devices/platform/dummy-battery/power_supply/Battery(/.*)                                                   u:object_r:sysfs_batteryinfo:s0
+/sys/devices/platform/dummy-charger/power_supply/usb(/.*)                                                       u:object_r:sysfs_batteryinfo:s0
+/sys/devices/platform/soc/ff800000.aobus/ff805000.i2c/i2c-4/4-004e/power_supply/tcpm-source-psy-4-004e(/.*)?    u:object_r:sysfs_batteryinfo:s0
+
 /vendor/bin/hw/android\.hardware\.health@2\.1-service.droidlogic u:object_r:hal_health_default_exec:s0
 
 # Keymaster
@@ -155,9 +159,6 @@
 /sys/class/mpgpu/mpgpucmd u:object_r:sysfs_mpgpu_cmd:s0
 
 /sys/devices/platform/aml_pm/suspend_reason                                                                    u:object_r:sysfs_power:s0
-/sys/devices/platform/dummy-battery/power_supply/Battery(/.*)                                                  u:object_r:sysfs_power:s0
-/sys/devices/platform/dummy-charger/power_supply/usb(/.*)                                                      u:object_r:sysfs_power:s0
-/sys/devices/platform/soc/ff800000.aobus/ff805000.i2c/i2c-4/4-004e/power_supply/tcpm-source-psy-4-004e(/.*)?  u:object_r:sysfs_power:s0
 /sys/power/early_suspend_trigger                                                                               u:object_r:sysfs_power:s0
 /sys/power/pm_async                                                                                            u:object_r:sysfs_power:s0
 /sys/power/pm_freeze_timeout                                                                                   u:object_r:sysfs_power:s0
