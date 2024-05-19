@@ -157,14 +157,12 @@
 /sys/devices/platform/aml_pm/suspend_reason                                                                    u:object_r:sysfs_power:s0
 /sys/devices/platform/dummy-battery/power_supply/Battery(/.*)                                                  u:object_r:sysfs_power:s0
 /sys/devices/platform/dummy-charger/power_supply/usb(/.*)                                                      u:object_r:sysfs_power:s0
-/sys/devices/platform/soc/ff800000.aobus/ff805000.i2c/i2c-4/4-004e/power_supply/tcpm-source-psy-4-004e(/.*)?  u:object_r:sysfs_power:s0
+/sys/devices/platform/soc/ff800000.aobus/ff805000.i2c/i2c-4/4-004e/power_supply/tcpm-source-psy-4-004e(/.*)?   u:object_r:sysfs_power:s0
 /sys/power/early_suspend_trigger                                                                               u:object_r:sysfs_power:s0
 /sys/power/pm_async                                                                                            u:object_r:sysfs_power:s0
 /sys/power/pm_freeze_timeout                                                                                   u:object_r:sysfs_power:s0
 /sys/power/state                                                                                               u:object_r:sysfs_power:s0
 /sys/power/wakeup_count                                                                                        u:object_r:sysfs_power:s0
-
-/vendor/bin/hw/android\.hardware\.power\.aidl-service.droidlogic u:object_r:hal_power_default_exec:s0
 
 # RTC
 /sys/devices/platform/rtc/rtc/rtc0/hctosys u:object_r:sysfs_rtc:s0
