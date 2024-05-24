@@ -23,6 +23,7 @@ allow mediacodec vendor_video_device:chr_file rw_file_perms;
 hal_client_domain(mediacodec, hal_system_control)
 
 get_prop(mediacodec, build_bootimage_prop);
+get_prop(mediacodec, media_prop);
 get_prop(mediacodec, omx_prop);
 get_prop(mediacodec, vendor_media_prop);
 set_prop(mediacodec, vendor_media_prop);
