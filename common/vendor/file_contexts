@@ -52,6 +52,7 @@
 # Display
 /dev/amdolby_vision       u:object_r:graphics_device:s0
 /dev/amstream_hevc        u:object_r:graphics_device:s0
+/dev/amstream_vbuf        u:object_r:graphics_device:s0
 /dev/graphics/fb[0-1]     u:object_r:graphics_device:s0
 /dev/uvm                  u:object_r:graphics_device:s0
 /dev/video_composer.*     u:object_r:graphics_device:s0
