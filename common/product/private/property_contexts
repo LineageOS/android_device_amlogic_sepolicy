@@ -8,7 +8,9 @@ media.amnuplayer.audio.delayus      u:object_r:media_prop:s0
 ro.rfkilldisabled    u:object_r:exported_bluetooth_prop:s0 exact string
 
 # Media
+hw.encoder.              u:object_r:media_prop:s0
 media.audiohal.          u:object_r:media_prop:s0
 media.afbc.limit         u:object_r:media_prop:s0
 media.decoder.vfm.defmap u:object_r:media_prop:s0
-media.omx.          u:object_r:omx_prop:s0
+media.encoder.           u:object_r:media_prop:s0
+media.omx.               u:object_r:omx_prop:s0
