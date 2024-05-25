@@ -6,3 +6,4 @@ allow kernel system_bootstrap_lib_file:file r_file_perms;
 allow kernel self:capability mknod;
 
 dontaudit kernel device:dir { write create add_name remove_name rmdir };
+allow kernel vendor_firmware_gpu_file:file { open read };
