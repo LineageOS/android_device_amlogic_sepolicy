@@ -13,6 +13,7 @@ ro.fastbootd.available    u:object_r:exported_default_prop:s0
 # Media
 hw.encoder.              u:object_r:media_prop:s0
 media.audiohal.          u:object_r:media_prop:s0
+media.audio_hal.         u:object_r:media_prop:s0
 media.afbc.limit         u:object_r:media_prop:s0
 media.decoder.vfm.defmap u:object_r:media_prop:s0
 media.encoder.           u:object_r:media_prop:s0
