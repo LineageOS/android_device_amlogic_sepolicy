@@ -14,6 +14,12 @@ allow init mnt_vendor_file:dir mounton;
 allow init param_tv_file:dir mounton;
 allow init tee_data_file:dir mounton;
 
+<<<<<<< PATCH SET (83f363 init: allow to set bluetooth_prop)
+set_prop(init, bluetooth_prop)
+set_prop(init, media_prop)
+set_prop(init, vendor_usb_prop)
+=======
+>>>>>>> BASE      (1a1cee property_contexts: add hw.encoder. and media.encoder. to med)
 set_prop(init, vendor_hdmi_prop)
 
 allow init hwservicemanager:binder call;
