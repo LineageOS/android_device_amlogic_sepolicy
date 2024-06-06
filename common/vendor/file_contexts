@@ -177,12 +177,20 @@
 /dev/tee0     u:object_r:tee_device:s0
 /dev/teepriv0 u:object_r:tee_device:s0
 
+/mnt/vendor/factory(/.*)? u:object_r:factory_file:s0
 /mnt/vendor/tee(/.*)? u:object_r:tee_data_file:s0
 
-/vendor/bin/tee_preload_fw u:object_r:tee_firmload_exec:s0
-/vendor/bin/tee-supplicant u:object_r:tee_exec:s0
-/vendor/bin/tee_hdcp       u:object_r:tee_exec:s0
+/vendor/bin/device_renew_key.bin u:object_r:tee_exec:s0
+/vendor/bin/generate_attestation_device_id u:object_r:tee_exec:s0
+/vendor/bin/key_inject u:object_r:tee_exec:s0
+/vendor/bin/tee_dec_hash u:object_r:tee_exec:s0
+/vendor/bin/tee_hdcp u:object_r:tee_exec:s0
 /vendor/bin/tee_key_inject u:object_r:tee_key_inject_exec:s0
+/vendor/bin/tee_lock_rpmb u:object_r:tee_exec:s0
+/vendor/bin/tee_preload_fw u:object_r:tee_firmload_exec:s0
+/vendor/bin/tee_provision u:object_r:tee_exec:s0
+/vendor/bin/tee_provision_password_hash u:object_r:tee_exec:s0
+/vendor/bin/tee-supplicant u:object_r:tee_exec:s0
 
 # Thermal
 /sys/class/thermal/thermal_zone0/temp u:object_r:sysfs_thermal:s0
