@@ -1,0 +1,2 @@
+allow hal_light_default_exec logd:unix_dgram_socket sendto;
+allow hal_light_default_exec self:unix_dgram_socket write;
