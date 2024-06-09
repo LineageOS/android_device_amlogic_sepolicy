@@ -1,0 +1,2 @@
+allow mediaextractor vendor_media_prop:file r_file_perms;
+allow mediaextractor media_prop:file getattr;
