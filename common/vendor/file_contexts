@@ -116,7 +116,7 @@
 
 # HDMI
 /sys/devices/virtual/amhdmitx/amhdmitx0(/.*)?      u:object_r:sysfs_amhdmitx:s0
-/sys/class/amstream/vcodec_profile                 u:object_r:sysfs_graphics_device:s0
+/sys/class/amstream(/.*)?                          u:object_r:sysfs_graphics_device:s0
 /sys/class/video(/.*)?                             u:object_r:sysfs_graphics_device:s0
 /sys/module/hdmitx20/parameters/hdmi_authenticated u:object_r:sysfs_hdmi:s0
 
