@@ -160,7 +160,7 @@
 /mnt/vendor/param(/.*)? u:object_r:param_tv_file:s0
 
 # Power
-/sys/class/mpgpu/mpgpucmd u:object_r:sysfs_mpgpu_cmd:s0
+/sys/class/mpgpu(/.*)? u:object_r:sysfs_mpgpu_cmd:s0
 
 /sys/devices/platform/aml_pm/suspend_reason                                                                    u:object_r:sysfs_power:s0
 /sys/power/early_suspend_trigger                                                                               u:object_r:sysfs_power:s0
