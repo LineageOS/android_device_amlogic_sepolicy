@@ -1,0 +1,2 @@
+user=system seinfo=platform name=com.droidlogic isPrivApp=true domain=droidlogic_app type=system_app_data_file
+user=system seinfo=platform name=com.droidlogic.DroidlogicApplication isPrivApp=true domain=droidlogic_app type=system_app_data_file
