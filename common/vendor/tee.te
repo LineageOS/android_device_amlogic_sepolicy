@@ -8,3 +8,16 @@ allowxperm tee sda_block_device:blk_file ioctl { 0xb300-0xb301 };
 
 allow tee self:capability sys_rawio;
 allow tee tee_key_inject_exec:file entrypoint;
+
+allow tee factory_file:dir create_dir_perms;
+allow tee factory_file:file create_file_perms;
+allow tee tee_key_inject_exec:file execute_no_trans;
+allow tee vendor_toolbox_exec:file execute_no_trans;
+
+allow tee property_socket:sock_file write;
+
+allow tee init:unix_stream_socket connectto;
+
+allow tee file_contexts_file:file r_file_perms;
+
+set_prop(tee, vendor_tee_prop)
