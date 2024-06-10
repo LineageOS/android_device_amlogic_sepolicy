@@ -53,5 +53,7 @@ set_prop(system_control, vendor_netflix_prop)
 
 vndbinder_use(system_control)
 
+allow system_control systemcontrol_hwservice:hwservice_manager { add find };
+
 # neverallow
 #allow system_control self:capability net_admin;

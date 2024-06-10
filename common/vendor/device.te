@@ -6,6 +6,7 @@ type display_device, dev_type;
 type dtb_block_device, dev_type;
 type dtbo_block_device, dev_type;
 type env_block_device, dev_type;
+type factory_block_device, dev_type;
 type logo_block_device, dev_type;
 type param_block_device, dev_type;
 type reserved_block_device, dev_type;
