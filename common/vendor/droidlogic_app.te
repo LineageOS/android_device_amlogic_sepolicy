@@ -1,0 +1,32 @@
+type droidlogic_app, domain, coredomain;
+typeattribute droidlogic_app mlstrustedsubject;
+
+type droidlogic_app_data_file, file_type, data_file_type, app_data_file_type;
+
+app_domain(droidlogic_app)
+net_domain(droidlogic_app)
+
+allow droidlogic_app app_api_service:service_manager find;
+allow droidlogic_app audioserver_service:service_manager find;
+allow droidlogic_app drmserver_service:service_manager find;
+allow droidlogic_app gpu_service:service_manager find;
+allow droidlogic_app mediadrmserver_service:service_manager find;
+allow droidlogic_app mediaextractor_service:service_manager find;
+allow droidlogic_app mediametrics_service:service_manager find;
+allow droidlogic_app mediaserver_service:service_manager find;
+allow droidlogic_app radio_service:service_manager find;
+allow droidlogic_app servicemanager:service_manager list;
+allow droidlogic_app surfaceflinger_service:service_manager find;
+
+binder_call(droidlogic_app, gpuservice)
+binder_use(droidlogic_app, system_control)
+
+allow droidlogic_app system_control:binder {call transfer};
+
+allow droidlogic_app sysfs_amhdmitx:dir search;
+allow droidlogic_app sysfs_power:file r_file_perms;
+
+allow droidlogic_app selinuxfs:file r_file_perms;
+
+get_prop(droidlogic_app, system_prop)
+get_prop(droidlogic_app, vendor_hdmi_prop)
