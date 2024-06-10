@@ -4,6 +4,7 @@ allow fsck {
     cache_block_device
     userdata_block_device
     dtbo_block_device
+    factory_block_device
     metadata_block_device
     param_block_device
     super_block_device
