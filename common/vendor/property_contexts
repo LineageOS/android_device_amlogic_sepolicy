@@ -4,6 +4,7 @@ persist.vendor.sys.cec.autowakeup     u:object_r:vendor_hdmi_prop:s0
 persist.vendor.sys.cec.deviceautopoweroff u:object_r:vendor_hdmi_prop:s0
 persist.vendor.sys.cec.logicaladdress u:object_r:vendor_hdmi_prop:s0
 persist.vendor.sys.graphics.priority  u:object_r:vendor_hdmi_prop:s0
+persist.vendor.sys.hdmionly           u:object_r:vendor_hdmi_prop:s0
 persist.vendor.sys.hdr.state          u:object_r:vendor_hdmi_prop:s0
 persist.vendor.sys.sdr.state          u:object_r:vendor_hdmi_prop:s0
 vendor.sys.cast_key_provisioned                 u:object_r:vendor_tee_prop:s0
