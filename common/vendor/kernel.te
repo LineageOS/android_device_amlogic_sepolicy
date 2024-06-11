@@ -8,6 +8,4 @@ allow kernel self:capability mknod;
 dontaudit kernel device:dir { write create add_name remove_name rmdir };
 allow kernel vendor_firmware_gpu_file:file { open read };
 
-#allow kernel device:blk_file create;
-
 allow kernel device:chr_file getattr;
