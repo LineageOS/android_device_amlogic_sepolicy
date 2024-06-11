@@ -182,7 +182,7 @@
 /sys/power/state                                                                                               u:object_r:sysfs_power:s0
 /sys/power/wakeup_count                                                                                        u:object_r:sysfs_power:s0
 
-/vendor/bin/performance_settings                                 u:object_r:hal_power_default_exec:s0
+/vendor/bin/performance_settings                                 u:object_r:performance_settings_exec:s0
 /vendor/bin/hw/android\.hardware\.power\.aidl-service.droidlogic u:object_r:hal_power_default_exec:s0
 
 # RTC
