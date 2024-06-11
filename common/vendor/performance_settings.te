@@ -1,0 +1,8 @@
+type performance_settings, domain;
+type performance_settings_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(performance_settings)
+
+allow performance_settings sysfs_amhdmitx:dir r_dir_perms;
+allow performance_settings sysfs_amhdmitx:file rw_file_perms;
+allow performance_settings esm_device:chr_file rw_file_perms;
