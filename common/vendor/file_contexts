@@ -217,7 +217,7 @@
 /vendor/bin/hw/android\.hardware\.thermal@2\.0-service\.droidlogic u:object_r:hal_thermal_default_exec:s0
 
 # USB
-/sys/devices/platform/ff400000.dwc2_a/udc/ff400000.dwc2_a(/.*)?        u:object_r:sysfs_usb:s0
+/sys/devices/platform/ff400000.dwc2_a(/.*)?        u:object_r:sysfs_usb:s0
 /sys/devices/platform/c8838000.ddr_bandwidth/extcon/bandwidth/cable.0/name u:object_r:sysfs_usb:s0
 /vendor/bin/hw/android\.hardware\.usb\.gadget@1\.[1-2]-service\.droidlogic u:object_r:hal_usb_gadget_default_exec:s0
 
