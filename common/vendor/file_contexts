@@ -167,6 +167,9 @@
 # Memtrack
 /vendor/bin/hw/android\.hardware\.memtrack-service\.droidlogic           u:object_r:hal_memtrack_default_exec:s0
 
+# Modprobe
+/vendor/bin/vendor_modprobe\.sh        u:object_r:vendor_modinstall-sh_exec:s0
+
 # OEM Lock
 /vendor/bin/hw/android\.hardware\.oemlock@1\.0-service\.droidlogic       u:object_r:hal_oemlock_default_exec:s0
 
