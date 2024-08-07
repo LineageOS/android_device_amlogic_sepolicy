@@ -16,6 +16,24 @@
       "message": "not sure how to handle this one - it\u0027s a weird one.",
       "revId": "87f36e67866ce1440efde10a17acf4610ca1b253",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5740cde0_c002bd82",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25925
+      },
+      "writtenOn": "2024-08-07T03:56:11Z",
+      "side": 1,
+      "message": "https://github.com/LineageOS/android_system_sepolicy/blob/lineage-21.0/public/te_macros#L557 ?\n\nAlso see https://github.com/LineageOS/android_build/blob/lineage-21.0/core/product_config.mk#L534 for why it is enabled",
+      "parentUuid": "185ce1ea_d67edddf",
+      "revId": "87f36e67866ce1440efde10a17acf4610ca1b253",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
