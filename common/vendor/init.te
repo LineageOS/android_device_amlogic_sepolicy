@@ -12,6 +12,7 @@ allow init sysfs_usb:file rw_file_perms;
 
 allow init functionfs:dir mounton;
 allow init mnt_vendor_file:dir mounton;
+allow init factory_file:dir mounton;
 allow init param_tv_file:dir mounton;
 allow init tee_data_file:dir mounton;
 
