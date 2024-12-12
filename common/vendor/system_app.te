@@ -1,5 +1,6 @@
 binder_use(system_app, system_control)
 allow system_app system_control:binder {call transfer};
+allow system_app systemcontrol_hwservice:hwservice_manager find;
 
 allow system_app sysfs_amhdmitx:dir search;
 allow system_app sysfs_power:file r_file_perms;
