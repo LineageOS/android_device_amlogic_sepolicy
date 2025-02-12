@@ -18,3 +18,7 @@ vendor_restricted_prop(vendor_media_prop);
 vendor_restricted_prop(vendor_netflix_prop);
 vendor_restricted_prop(vendor_platform_prop);
 vendor_restricted_prop(vendor_tv_prop);
+
+# For ro.hardware.chipname
+vendor_public_prop(vendor_deprecated_soc_prop);
+dontaudit domain vendor_deprecated_soc_prop:file *;

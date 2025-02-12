@@ -81,3 +81,6 @@ vendor.sys.subtitle.                u:object_r:vendor_media_prop:s0
 vendor.netflix.state                u:object_r:vendor_netflix_prop:s0
 ro.vendor.nrdp.                     u:object_r:vendor_netflix_prop:s0
 ro.vendor.usb.convport              u:object_r:vendor_usb_prop:s0
+
+# Graphics HAL
+ro.hardware.chipname    u:object_r:vendor_deprecated_soc_prop:s0 exact string
