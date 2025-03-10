@@ -1,0 +1,6 @@
+# systemcontrol_static runs in recovery domain
+allow recovery sysfs_amhdmitx:dir r_dir_perms;
+allow recovery sysfs_amhdmitx:file rw_file_perms;
+allow recovery sysfs_graphics_device:dir r_dir_perms;
+allow recovery sysfs_graphics_device:file rw_file_perms;
+allow recovery video_device:chr_file rw_file_perms;
