@@ -65,14 +65,7 @@
 /sys/class/video/device_resolution                            u:object_r:sysfs_graphics_device:s0
 /sys/class/video/frame_height                                 u:object_r:sysfs_graphics_device:s0
 /sys/class/video_poll/frame_height                            u:object_r:sysfs_graphics_device:s0
-/sys/devices/platform/meson-fb/graphics/fb[0-9]/free_fb_mem       u:object_r:sysfs_graphics_device:s0
-/sys/devices/platform/meson-fb/graphics/fb[0-9]/free_scale_switch u:object_r:sysfs_graphics_device:s0
-/sys/devices/platform/meson-fb/graphics/fb[0-9]/osd_afbcd         u:object_r:sysfs_graphics_device:s0
-/sys/devices/platform/meson-fb/graphics/fb[0-9]/blank             u:object_r:sysfs_graphics_device:s0
-/sys/devices/platform/fb/graphics/fb[0-9]/free_fb_mem       u:object_r:sysfs_graphics_device:s0
-/sys/devices/platform/fb/graphics/fb[0-9]/free_scale_switch u:object_r:sysfs_graphics_device:s0
-/sys/devices/platform/fb/graphics/fb[0-9]/osd_afbcd         u:object_r:sysfs_graphics_device:s0
-/sys/devices/platform/fb/graphics/fb[0-9]/blank             u:object_r:sysfs_graphics_device:s0
+/sys/devices/platform/(meson-)fb/graphics/fb[0-9](/.*)?       u:object_r:sysfs_graphics_device:s0
 /sys/module/amdolby_vision/parameters/dolby_vision_enable     u:object_r:sysfs_graphics_device:s0
 /sys/module/amdolby_vision/parameters/dolby_vision_ll_policy  u:object_r:sysfs_graphics_device:s0
 /sys/module/di/parameters(/.*)?                               u:object_r:sysfs_graphics_device:s0
