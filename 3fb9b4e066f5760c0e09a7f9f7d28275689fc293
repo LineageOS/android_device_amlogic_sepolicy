@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c6a30fe_9f394697",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-04-02T01:36:22Z",
+      "side": 1,
+      "message": "better off in device/lineage/sepolicy/atv/ as it\u0027s not AML specific?",
+      "revId": "3fb9b4e066f5760c0e09a7f9f7d28275689fc293",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
