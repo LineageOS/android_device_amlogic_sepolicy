@@ -182,8 +182,11 @@
 /vendor/bin/performance_settings                                 u:object_r:performance_settings_exec:s0
 
 # remotecfg
-/dev/amremote           u:object_r:input_device:s0
-/vendor/bin/remotecfg   u:object_r:remotecfg_exec:s0
+/dev/amremote                                 u:object_r:input_device:s0
+
+/sys/devices/virtual/remote/amremote(/.*)?    u:object_r:sysfs_remotecfg:s0
+
+/vendor/bin/remotecfg                         u:object_r:remotecfg_exec:s0
 
 # RTC
 /sys/devices/platform/rtc/rtc/rtc0/hctosys u:object_r:sysfs_rtc:s0
