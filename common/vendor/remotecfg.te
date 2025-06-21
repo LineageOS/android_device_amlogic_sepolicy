@@ -5,4 +5,7 @@ init_daemon_domain(remotecfg)
 
 allow remotecfg input_device:chr_file { read write open ioctl };
 
+allow remotecfg remotecfg_sysfs:dir search;
+allow remotecfg remotecfg_sysfs:file { read write open };
+
 allow init remotecfg_exec:file { execute r_file_perms };
