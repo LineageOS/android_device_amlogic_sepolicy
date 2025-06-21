@@ -19,6 +19,7 @@ type sysfs_mali, fs_type, sysfs_type;
 type sysfs_media, fs_type, sysfs_type;
 type sysfs_mmc_host, fs_type, sysfs_type;
 type sysfs_mpgpu_cmd, fs_type, sysfs_type;
+type sysfs_remotecfg, sysfs_type, fs_type;
 type sysfs_video, fs_type, sysfs_type;
 type sysfs_wifi, fs_type, sysfs_type;
 type sysfs_xbmc, fs_type, sysfs_type;
