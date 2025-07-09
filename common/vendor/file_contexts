@@ -182,6 +182,8 @@
 /vendor/bin/performance_settings                                 u:object_r:performance_settings_exec:s0
 
 # remotecfg
+/data/vendor/remotecfg(/.*)?                  u:object_r:vendor_remotecfg_data_file:s0
+
 /dev/amremote                                 u:object_r:input_device:s0
 
 /sys/devices/virtual/remote/amremote(/.*)?    u:object_r:sysfs_remotecfg:s0

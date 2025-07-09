@@ -3,6 +3,8 @@ type remotecfg_exec, exec_type, vendor_file_type, file_type;
 
 init_daemon_domain(remotecfg)
 
+r_dir_file(remotecfg, vendor_remotecfg_data_file)
+
 allow remotecfg input_device:chr_file { read write open ioctl };
 
 allow remotecfg sysfs_remotecfg:dir search;
