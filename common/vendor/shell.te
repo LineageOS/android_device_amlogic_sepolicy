@@ -1,0 +1,3 @@
+# Before you ask, yes this should exist.
+# We allow the user to set this property via ADB.
+set_prop(shell, vendor_persist_remotecfg_prop)

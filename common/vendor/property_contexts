@@ -1,5 +1,7 @@
 ro.boot.oem.locales     u:object_r:vendor_boot_prop:s0
 
+persist.vendor.amlogic.remotecfg.path    u:object_r:vendor_public_vendor_default_prop:s0
+
 persist.vendor.sys.cec.autowakeup     u:object_r:vendor_hdmi_prop:s0
 persist.vendor.sys.cec.deviceautopoweroff u:object_r:vendor_hdmi_prop:s0
 persist.vendor.sys.cec.logicaladdress u:object_r:vendor_hdmi_prop:s0
