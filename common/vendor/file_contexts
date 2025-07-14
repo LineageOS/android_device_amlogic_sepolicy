@@ -6,6 +6,8 @@
 /vendor/bin/hw/android\.hardware\.audio@2\.0-service u:object_r:hal_audio_default_exec:s0
 
 # Block Devices
+/dev/block/bootloader0              u:object_r:bootloader_block_device:s0
+/dev/block/bootloader1              u:object_r:bootloader_block_device:s0
 /dev/block/by-name/boot             u:object_r:boot_block_device:s0
 /dev/block/by-name/bootloader       u:object_r:bootloader_block_device:s0
 /dev/block/by-name/cache            u:object_r:cache_block_device:s0
