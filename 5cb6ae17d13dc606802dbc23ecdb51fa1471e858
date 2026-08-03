@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c8ce419b_2c628243",
+        "filename": "common/vendor/file_contexts",
+        "patchSetId": 5
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-08-03T04:02:03Z",
+      "side": 1,
+      "message": "re-read, it is covered.",
+      "parentUuid": "83c71d45_7257272b",
+      "revId": "5cb6ae17d13dc606802dbc23ecdb51fa1471e858",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "bf6fae4d_0f0d58cd",
@@ -31,6 +49,24 @@
       "writtenOn": "2026-08-03T02:58:37Z",
       "side": 1,
       "message": "For 14 boot control should be AIDL. HIDL boot control is broken on AML since 22.2.",
+      "revId": "5cb6ae17d13dc606802dbc23ecdb51fa1471e858",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "003e4ca3_b9e1a8d0",
+        "filename": "common/vendor/file_contexts",
+        "patchSetId": 5
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-08-03T04:02:03Z",
+      "side": 1,
+      "message": "re-read, it is covered.",
+      "parentUuid": "bf6fae4d_0f0d58cd",
       "revId": "5cb6ae17d13dc606802dbc23ecdb51fa1471e858",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
