@@ -8,6 +8,7 @@ type amstream_device, dev_type;
 
 type param_tv_file, file_type;
 
+type proc_softlockup, fs_type, proc_type;
 type proc_vm_writable, fs_type, proc_type;
 
 type sysfs_amhdmitx, fs_type, sysfs_type;

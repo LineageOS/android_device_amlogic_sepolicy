@@ -1,3 +1,5 @@
+allow recovery pstorefs:dir search;
+
 # systemcontrol_static runs in recovery domain
 allow recovery sysfs_amhdmitx:dir r_dir_perms;
 allow recovery sysfs_amhdmitx:file rw_file_perms;
