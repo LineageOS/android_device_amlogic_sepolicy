@@ -1,5 +1,9 @@
 ro.boot.oem.locales     u:object_r:vendor_boot_prop:s0
 
+poweroff.doubleclick            u:object_r:vendor_shutdown_prop:s0
+service.bootvideo.exit          u:object_r:vendor_bootvideo_prop:s0
+sys.vendor.global.settingskey   u:object_r:vendor_global_prop:s0
+
 persist.vendor.sys.cec.autowakeup     u:object_r:vendor_hdmi_prop:s0
 persist.vendor.sys.cec.deviceautopoweroff u:object_r:vendor_hdmi_prop:s0
 persist.vendor.sys.cec.logicaladdress u:object_r:vendor_hdmi_prop:s0

@@ -1,11 +1,14 @@
 vendor_internal_prop(vendor_boot_prop);
+vendor_internal_prop(vendor_bootvideo_prop);
 vendor_internal_prop(vendor_display_prop);
 vendor_internal_prop(vendor_dolby_prop);
 vendor_internal_prop(vendor_media_prop);
 vendor_internal_prop(vendor_usb_prop);
 vendor_internal_prop(vendor_wifi_prop);
 
+vendor_public_prop(vendor_global_prop);
 vendor_public_prop(vendor_hdmi_prop);
 vendor_public_prop(vendor_led_prop);
 vendor_public_prop(vendor_netflix_prop);
+vendor_public_prop(vendor_shutdown_prop);
 vendor_public_prop(vendor_tee_prop);
