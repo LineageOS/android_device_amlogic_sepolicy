@@ -3,3 +3,13 @@ allow fastbootd {
     recovery_block_device
     vbmeta_block_device
 }:blk_file { w_file_perms getattr ioctl };
+
+# e2fsck runs against the metadata partition during fastbootd resize/format
+allow fastbootd metadata_block_device:blk_file { rw_file_perms getattr ioctl };
+
+allow fastbootd sysfs_fs_ext4_features:dir search;
+allow fastbootd sysfs_fs_ext4_features:file r_file_perms;
+
+allow fastbootd kernel:process setsched;
+
+get_prop(fastbootd, storage_config_prop)
