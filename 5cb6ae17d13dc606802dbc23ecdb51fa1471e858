@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "83c71d45_7257272b",
+        "filename": "common/vendor/file_contexts",
+        "patchSetId": 5
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 32674
+      },
+      "writtenOn": "2026-08-03T02:58:37Z",
+      "side": 1,
+      "message": "Isn\u0027t audio should be AIDL too?",
+      "revId": "5cb6ae17d13dc606802dbc23ecdb51fa1471e858",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bf6fae4d_0f0d58cd",
+        "filename": "common/vendor/file_contexts",
+        "patchSetId": 5
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 32674
+      },
+      "writtenOn": "2026-08-03T02:58:37Z",
+      "side": 1,
+      "message": "For 14 boot control should be AIDL. HIDL boot control is broken on AML since 22.2.",
+      "revId": "5cb6ae17d13dc606802dbc23ecdb51fa1471e858",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
