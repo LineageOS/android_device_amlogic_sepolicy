@@ -1,0 +1,2 @@
+# Traversal of /bin (a rootfs symlink to /system/bin) during early boot
+allow hal_bootctl_default rootfs:dir r_dir_perms;

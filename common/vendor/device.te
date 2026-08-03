@@ -1,3 +1,4 @@
+type amhdmitx_device, dev_type;
 type amvecm_device, dev_type;
 type bootloader_block_device, dev_type;
 type cec_device, dev_type;
@@ -9,8 +10,11 @@ type factory_block_device, dev_type;
 type logo_block_device, dev_type;
 type param_block_device, dev_type;
 type reserved_block_device, dev_type;
+type rpmb_block_device, dev_type;
 type rsv_block_device, dev_type;
 type sda_block_device, dev_type;
 type tee_block_device, dev_type;
 type vbmeta_block_device, dev_type;
 type vendor_video_device, dev_type;
+
+type sysfs_aml_media, sysfs_type, fs_type;

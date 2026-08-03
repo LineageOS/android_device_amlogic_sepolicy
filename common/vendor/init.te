@@ -3,6 +3,9 @@ allow init {
     vbmeta_block_device
 }:{ lnk_file blk_file} relabelto;
 
+# init recreates the emmc boot-partition symlinks (mmcblk0boot0/1) under /dev/block
+allow init block_device:lnk_file { create unlink };
+
 allow init sysfs_bluetooth_writable:file r_file_perms;
 allow init sysfs_devices_block:file rw_file_perms;;
 allow init sysfs_leds:file r_file_perms;
