@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2823e99d_22f04e5b",
+        "filename": "common/vendor/file_contexts",
+        "patchSetId": 7
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-08-03T08:15:18Z",
+      "side": 1,
+      "message": "I would leave \"2\" here",
+      "range": {
+        "startLine": 7,
+        "startChar": 41,
+        "endLine": 7,
+        "endChar": 48
+      },
+      "revId": "c374862b0c6ceb4e62d50674e721956df08067f4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a5c1ff68_4d86a111",
+        "filename": "common/vendor/file_contexts",
+        "patchSetId": 7
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-08-03T08:15:18Z",
+      "side": 1,
+      "message": "Move to the bottom",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 67
+      },
+      "revId": "c374862b0c6ceb4e62d50674e721956df08067f4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bd97033c_5f17e447",
+        "filename": "common/vendor/hal_graphics_allocator_default.te",
+        "patchSetId": 7
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-08-03T08:15:18Z",
+      "side": 1,
+      "message": "Before \"graphics_device\"",
+      "range": {
+        "startLine": 3,
+        "startChar": 37,
+        "endLine": 3,
+        "endChar": 55
+      },
+      "revId": "c374862b0c6ceb4e62d50674e721956df08067f4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "53c9ab48_594f9730",
+        "filename": "common/vendor/hal_graphics_composer_default.te",
+        "patchSetId": 7
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-08-03T08:15:18Z",
+      "side": 1,
+      "message": "This might actually be wrong. I\u0027d overwrite with the chr_file rule.",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 71
+      },
+      "revId": "c374862b0c6ceb4e62d50674e721956df08067f4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
