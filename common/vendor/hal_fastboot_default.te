@@ -1,0 +1,4 @@
+allow hal_fastboot_default kmsg_device:chr_file { open write };
+
+# Traversal of /bin (a rootfs symlink to /system/bin) during early boot
+allow hal_fastboot_default rootfs:dir r_dir_perms;
