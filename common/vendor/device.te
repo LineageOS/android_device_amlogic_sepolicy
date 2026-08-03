@@ -9,6 +9,7 @@ type factory_block_device, dev_type;
 type logo_block_device, dev_type;
 type param_block_device, dev_type;
 type reserved_block_device, dev_type;
+type rpmb_block_device, dev_type;
 type rsv_block_device, dev_type;
 type sda_block_device, dev_type;
 type tee_block_device, dev_type;
