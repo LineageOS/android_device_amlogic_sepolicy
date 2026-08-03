@@ -2,7 +2,10 @@ genfscon debugfs /ion/heaps/vmalloc_ion u:object_r:debugfs_system_ion_heap:s0
 
 genfscon proc /kcore u:object_r:proc_iomem:s0
 
+genfscon proc /sys/kernel/softlockup_panic u:object_r:proc_softlockup:s0
+
 genfscon proc /sys/vm/min_free_kbytes        u:object_r:proc_vm_writable:s0
+genfscon proc /sys/vm/swappiness             u:object_r:proc_vm_writable:s0
 
 genfscon sysfs /devices/platform/bt-dev/rfkill/rfkill0/state u:object_r:sysfs_bluetooth_writable:s0
 
