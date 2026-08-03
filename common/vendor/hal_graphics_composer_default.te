@@ -5,6 +5,7 @@ hal_client_domain(hal_graphics_composer_default, hal_system_control)
 
 allow hal_graphics_composer_default amvecm_device:chr_file rw_file_perms;
 allow hal_graphics_composer_default display_device:chr_file rw_file_perms;
+allow hal_graphics_composer_default graphics_device:chr_file rw_file_perms;
 allow hal_graphics_composer_default graphics_device:file rw_file_perms;
 allow hal_graphics_composer_default vendor_video_device:chr_file rw_file_perms;
 allow hal_graphics_composer_default video_device:chr_file rw_file_perms;

@@ -1,0 +1,14 @@
+type modules_load, domain;
+type modules_load_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(modules_load)
+
+allow modules_load self:capability sys_module;
+
+# Read and insmod the vendor kernel modules
+allow modules_load vendor_file:system module_load;
+allow modules_load vendor_file:dir r_dir_perms;
+allow modules_load vendor_file:file r_file_perms;
+
+# libc++.so / libbase.so linked by the loader are same_process_hal_file
+allow modules_load same_process_hal_file:file { execute r_file_perms map };

@@ -2,3 +2,5 @@ allow ueventd display_device:file relabelto;
 allow ueventd graphics_device:file relabelto;
 
 allow ueventd tmpfs:filesystem associate;
+
+allow ueventd self:capability sys_nice;
