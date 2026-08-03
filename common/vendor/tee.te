@@ -1,9 +1,11 @@
 allow tee block_device:dir r_dir_perms;
 allow tee mnt_vendor_file:dir r_dir_perms;
+allow tee rpmb_block_device:chr_file { read open write ioctl };
 allow tee sda_block_device:blk_file { read open write ioctl };
 allow tee tee_data_file:dir { create_dir_perms mounton };
 allow tee tee_data_file:file r_file_perms;
 
+allowxperm tee rpmb_block_device:chr_file ioctl { 0xb300-0xb301 };
 allowxperm tee sda_block_device:blk_file ioctl { 0xb300-0xb301 };
 
 allow tee self:capability sys_rawio;
