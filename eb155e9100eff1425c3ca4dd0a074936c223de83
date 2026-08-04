@@ -16,6 +16,24 @@
       "message": "Why have you moved to 22.2 branch?",
       "revId": "eb155e9100eff1425c3ca4dd0a074936c223de83",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "87153e5b_fe5c57fc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-08-04T20:15:51Z",
+      "side": 1,
+      "message": "discussed on discord, will move back",
+      "parentUuid": "f7936a33_95af41e9",
+      "revId": "eb155e9100eff1425c3ca4dd0a074936c223de83",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
