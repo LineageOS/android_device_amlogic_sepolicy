@@ -49,6 +49,8 @@ genfscon sysfs /devices/platform/ffe40000.bifrost/soft_job_timeout       u:objec
 genfscon sysfs /module/aml_media/parameters          u:object_r:sysfs_aml_media:s0
 genfscon sysfs /module/mali_kbase/version            u:object_r:sysfs_mali:s0
 
+genfscon sysfs /class/amvecm/enable_hdr10plus        u:object_r:sysfs_amvecm:s0
+
 genfscon sysfs /class/thermal                                             u:object_r:sysfs_thermal:s0
 genfscon sysfs /devices/virtual/thermal                                   u:object_r:sysfs_thermal:s0
 
