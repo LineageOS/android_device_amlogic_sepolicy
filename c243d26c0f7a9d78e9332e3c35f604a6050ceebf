@@ -22,6 +22,30 @@
       },
       "revId": "c243d26c0f7a9d78e9332e3c35f604a6050ceebf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b998887e_8300b228",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-08-07T15:30:56Z",
+      "side": 1,
+      "message": "they\u0027re missing the 3rd component of the macro, so they can\u0027t be using the macro.",
+      "parentUuid": "88c2a64e_f4b48603",
+      "range": {
+        "startLine": 9,
+        "startChar": 2,
+        "endLine": 9,
+        "endChar": 46
+      },
+      "revId": "c243d26c0f7a9d78e9332e3c35f604a6050ceebf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
