@@ -4,7 +4,8 @@ type system_control_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(system_control)
 
 hal_attribute_hwservice(hal_system_control, systemcontrol_hwservice)
-hal_server_domain(system_control, hal_system_control)
+typeattribute system_control hal_system_control;
+typeattribute system_control hal_system_control_server;
 
 hwbinder_use(system_control)
 
@@ -56,5 +57,4 @@ vndbinder_use(system_control)
 
 allow system_control systemcontrol_hwservice:hwservice_manager { add find };
 
-# neverallow
-#allow system_control self:capability net_admin;
+allow system_control self:capability net_admin;
