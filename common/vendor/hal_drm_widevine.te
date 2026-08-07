@@ -1,0 +1,17 @@
+type hal_drm_widevine, domain;
+hal_server_domain(hal_drm_widevine, hal_drm)
+
+type hal_drm_widevine_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_drm_widevine)
+hal_client_domain(hal_drm_widevine, hal_graphics_composer);
+vndbinder_use(hal_drm_widevine);
+wakelock_use(hal_drm_widevine);
+
+allow hal_drm_widevine mediacodec:fd use;
+allow hal_drm_widevine { appdomain -isolated_app_all }:fd use;
+
+allow hal_drm_widevine dmabuf_heap_device:chr_file r_file_perms;
+allow hal_drm_widevine tee_device:chr_file rw_file_perms;
+
+allow hal_drm_widevine vendor_mediadrm_vendor_data_file:dir create_dir_perms;
+allow hal_drm_widevine vendor_mediadrm_vendor_data_file:file create_file_perms;

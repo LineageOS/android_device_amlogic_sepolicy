@@ -1,3 +1,5 @@
+android.hardware.drm.IDrmFactory/widevine   u:object_r:hal_drm_service:s0
+
 mapper/arm                                  u:object_r:hal_graphics_mapper_service:s0
 
 system_control                              u:object_r:system_control_service:s0
