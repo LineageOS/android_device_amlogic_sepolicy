@@ -13,3 +13,16 @@ allow fastbootd sysfs_fs_ext4_features:file r_file_perms;
 allow fastbootd kernel:process setsched;
 
 get_prop(fastbootd, storage_config_prop)
+
+allowxperm fastbootd metadata_block_device:blk_file ioctl {
+    BLKROGET
+    BLKDISCARDZEROES
+    BLKGETSIZE
+    BLKGETSIZE64
+    BLKSSZGET
+    BLKPBSZGET
+    BLKFLSBUF
+    BLKDISCARD
+    BLKSECDISCARD
+    BLKROSET
+};
