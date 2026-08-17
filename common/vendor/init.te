@@ -25,3 +25,5 @@ set_prop(init, vendor_usb_prop)
 set_prop(init, vendor_hdmi_prop)
 
 allow init hwservicemanager:binder call;
+
+allow init kernel:system module_request;
