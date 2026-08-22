@@ -8,3 +8,5 @@ allow recovery sysfs_graphics_device:file rw_file_perms;
 allow recovery video_device:chr_file rw_file_perms;
 
 rw_dir_file(recovery, sysfs_loop)
+
+dontaudit recovery vendor_dolby_prop:property_service set;

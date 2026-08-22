@@ -1,0 +1,1 @@
+dontaudit priv_app_36 cgroup_v2:dir search;

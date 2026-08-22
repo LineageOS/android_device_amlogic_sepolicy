@@ -6,5 +6,8 @@ allow system_app sysfs_power:file r_file_perms;
 
 allow system_app selinuxfs:file r_file_perms;
 
+# oid.tv.settings trying to reach into com.google.android.gms
+dontaudit system_app privapp_data_file:dir search;
+
 get_prop(system_app, system_prop)
 get_prop(system_app, vendor_hdmi_prop)
