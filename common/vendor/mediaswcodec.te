@@ -1,0 +1,2 @@
+get_prop(surfaceflinger, vendor_gralloc_prop)
+get_prop(mediaswcodec, vendor_hwc_prop)

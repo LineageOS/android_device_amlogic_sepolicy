@@ -8,7 +8,12 @@ genfscon proc /sys/kernel/softlockup_panic   u:object_r:proc_softlockup:s0
 genfscon proc /sys/vm/min_free_kbytes        u:object_r:proc_vm_writable:s0
 genfscon proc /sys/vm/swappiness             u:object_r:proc_vm_writable:s0
 
+genfscon sysfs /class/meson_pm               u:object_r:sysfs_early_suspend:s0
+genfscon sysfs /class/udc                    u:object_r:sysfs_udc:s0
+genfscon sysfs /class/unifykeys              u:object_r:sysfs_unifykeys:s0
+
 genfscon sysfs /devices/platform/bt-dev/rfkill/rfkill0/state u:object_r:sysfs_bluetooth_writable:s0
+genfscon sysfs /devices/platform/aml_bt/rfkill/rfkill0/state u:object_r:sysfs_bluetooth_writable:s0
 
 genfscon sysfs /devices/platform/0.amhdmitx/extcon                                                                  u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/ff638000.ddr_bandwidth/extcon/bandwidth/cable.0/name                               u:object_r:sysfs_extcon:s0
@@ -22,6 +27,8 @@ genfscon sysfs /devices/platform/vdin0/vdin/vdin0/vdin0event/cable.0/name       
 genfscon sysfs /devices/platform/vdin1/vdin/vdin1/vdin1event/cable.0/name                                           u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/vout/extcon/setmode/cable.0/name                                                   u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/vout2/extcon/setmode2/cable.0/name                                                 u:object_r:sysfs_extcon:s0
+
+genfscon sysfs /devices/platform/soc/fdd00000.dwc2_a/udc                 u:object_r:sysfs_udc:s0
 
 genfscon sysfs /devices/platform/fe400000.bifrost/core_mask              u:object_r:sysfs_graphics_device:s0
 genfscon sysfs /devices/platform/fe400000.bifrost/ctx_mem_pool_size      u:object_r:sysfs_graphics_device:s0
@@ -46,12 +53,24 @@ genfscon sysfs /devices/platform/ffe40000.bifrost/mem_pool_max_size      u:objec
 genfscon sysfs /devices/platform/ffe40000.bifrost/power_policy           u:object_r:sysfs_graphics_device:s0
 genfscon sysfs /devices/platform/ffe40000.bifrost/soft_job_timeout       u:object_r:sysfs_graphics_device:s0
 
+genfscon sysfs /class/amstream                       u:object_r:sysfs_aml_media:s0
 genfscon sysfs /module/aml_media/parameters          u:object_r:sysfs_aml_media:s0
 genfscon sysfs /module/mali_kbase/version            u:object_r:sysfs_mali:s0
 
 genfscon sysfs /class/amvecm/enable_hdr10plus        u:object_r:sysfs_amvecm:s0
 
+genfscon sysfs /class/aml_wifi/power                 u:object_r:sysfs_wifi:s0
+
+genfscon sysfs /devices/platform/adc_keypad/wakeup                                 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/aml_wifi/wakeup                                   u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/fe010288.rtc/rtc/rtc0/alarmtimer.1.auto/wakeup    u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/fe010288.rtc/wakeup                               u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/fe044000.aocec/wakeup                             u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/fe084040.ir/wakeup                                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/fdc00000.ethernet/wakeup                      u:object_r:sysfs_wakeup:s0
+
 genfscon sysfs /class/thermal                                             u:object_r:sysfs_thermal:s0
 genfscon sysfs /devices/virtual/thermal                                   u:object_r:sysfs_thermal:s0
 
 genfscon sysfs /devices/platform/d0074000.emmc/mmc_host/emmc/emmc:0001/block/mmcblk0/queue/discard_max_bytes        u:object_r:sysfs_mmc_host:s0
+genfscon sysfs /devices/platform/soc/fe08c000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/discard_max_bytes     u:object_r:sysfs_mmc_host:s0
