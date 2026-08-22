@@ -3,3 +3,5 @@ allow hal_tv_hdmi_connection_default cec_device:chr_file rw_file_perms;
 allow hal_tv_hdmi_connection_default self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
 
 get_prop(hal_tv_hdmi_connection_default, hdmi_config_prop)
+
+set_prop(hal_tv_hdmi_connection_default, vendor_hdmi_prop)

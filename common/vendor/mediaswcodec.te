@@ -1,0 +1,2 @@
+dontaudit mediaswcodec vendor_default_prop:file r_file_perms;
+dontaudit mediaswcodec vendor_default_prop:property_service set;

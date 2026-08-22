@@ -2,3 +2,8 @@ allow system_server frp_block_device:blk_file r_file_perms;
 allow system_server sysfs_amhdmitx:file r_file_perms;
 allow system_server sysfs_graphics_device:file r_file_perms;
 allow system_server sysfs_rtc:file r_file_perms;
+
+get_prop(system_server, vendor_dolby_prop)
+get_prop(system_server, wifi_hal_prop)
+
+dontaudit system_server vendor_default_prop:file r_file_perms;
