@@ -26,6 +26,7 @@ allow system_control param_tv_file:dir rw_dir_perms;
 allow system_control param_tv_file:file create_file_perms;
 allow system_control sysfs_amhdmitx:dir search;
 allow system_control sysfs_amhdmitx:file rw_file_perms;
+allow system_control sysfs_aml_media:dir search;
 allow system_control sysfs_aml_media:file rw_file_perms;
 allow system_control sysfs_amvecm:dir r_dir_perms;
 allow system_control sysfs_amvecm:file rw_file_perms;
@@ -45,16 +46,19 @@ allow system_control init:unix_stream_socket read;
 allow system_control system_control:netlink_kobject_uevent_socket { bind create read setopt };
 
 get_prop(system_control, hwservicemanager_prop)
+get_prop(system_control, vendor_hwc_prop)
 set_prop(system_control, ctl_default_prop)
 set_prop(system_control, ctl_stop_prop)
 set_prop(system_control, media_prop)
 set_prop(system_control, vendor_boot_prop)
 set_prop(system_control, vendor_display_prop)
-set_prop(system_control, vendor_hdmi_prop)
 set_prop(system_control, vendor_dolby_prop)
+set_prop(system_control, vendor_hdmi_prop)
+get_prop(system_control, vendor_hwc_prop)
 set_prop(system_control, vendor_led_prop)
 set_prop(system_control, vendor_media_prop)
 set_prop(system_control, vendor_netflix_prop)
+set_prop(system_control, vendor_platform_prop)
 
 vndbinder_use(system_control)
 

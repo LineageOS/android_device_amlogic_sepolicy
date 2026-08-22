@@ -1,0 +1,2 @@
+get_prop(appdomain, vendor_hdmi_prop)
+get_prop(appdomain, vendor_netflix_prop)

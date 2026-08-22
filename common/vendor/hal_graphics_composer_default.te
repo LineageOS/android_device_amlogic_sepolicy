@@ -6,11 +6,15 @@ hal_client_domain(hal_graphics_composer_default, hal_system_control)
 allow hal_graphics_composer_default amvecm_device:chr_file rw_file_perms;
 allow hal_graphics_composer_default display_device:chr_file rw_file_perms;
 allow hal_graphics_composer_default graphics_device:chr_file rw_file_perms;
+allow hal_graphics_composer_default surfaceflinger:dir search;
+allow hal_graphics_composer_default surfaceflinger:file r_file_perms;
 allow hal_graphics_composer_default vendor_video_device:chr_file rw_file_perms;
 allow hal_graphics_composer_default video_device:chr_file rw_file_perms;
 
 allow hal_graphics_composer_default sysfs_amhdmitx:dir search;
 allow hal_graphics_composer_default sysfs_amhdmitx:file rw_file_perms;
+allow hal_graphics_composer_default sysfs_aml_media:dir search;
+allow hal_graphics_composer_default sysfs_aml_media:file rw_file_perms;
 allow hal_graphics_composer_default sysfs_graphics_device:dir search;
 allow hal_graphics_composer_default sysfs_graphics_device:file rw_file_perms;
 allow hal_graphics_composer_default sysfs_media:dir search;
@@ -20,7 +24,18 @@ allow hal_graphics_composer_default kernel:process setsched;
 
 allow hal_graphics_composer_default self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
 
-get_prop(hal_graphics_composer_default, vendor_netflix_prop)
+get_prop(hal_graphics_composer_default, vendor_hwc_prop)
+get_prop(hal_graphics_composer_default, vendor_platform_prop)
 set_prop(hal_graphics_composer_default, vendor_boot_prop)
+set_prop(hal_graphics_composer_default, vendor_hdmi_prop)
+set_prop(hal_graphics_composer_default, vendor_netflix_prop)
 
 vndbinder_use(hal_graphics_composer_default)
+
+# For ctl.start$hdcp_tx22/ctl.stop$hdcp_tx22 - service is not included anyway
+dontaudit hal_graphics_composer_default ctl_start_prop:file r_file_perms;
+dontaudit hal_graphics_composer_default ctl_stop_prop:file r_file_perms;
+dontaudit hal_graphics_composer_default ctl_start_prop:property_service set;
+dontaudit hal_graphics_composer_default ctl_stop_prop:property_service set;
+dontaudit hal_graphics_composer_default system_prop:file r_file_perms;
+dontaudit hal_graphics_composer_default system_prop:property_service set;
