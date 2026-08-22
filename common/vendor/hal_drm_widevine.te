@@ -15,3 +15,6 @@ allow hal_drm_widevine tee_device:chr_file rw_file_perms;
 
 allow hal_drm_widevine vendor_mediadrm_vendor_data_file:dir create_dir_perms;
 allow hal_drm_widevine vendor_mediadrm_vendor_data_file:file create_file_perms;
+
+get_prop(hal_drm_widevine, vendor_media_prop)
+get_prop(hal_drm_widevine, vendor_security_patch_level_prop)
