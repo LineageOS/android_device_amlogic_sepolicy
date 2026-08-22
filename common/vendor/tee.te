@@ -16,6 +16,9 @@ allow tee factory_file:file create_file_perms;
 allow tee tee_key_inject_exec:file execute_no_trans;
 allow tee vendor_toolbox_exec:file execute_no_trans;
 
+allow tee vfat:dir r_dir_perms;
+allow tee vfat:file r_file_perms;
+
 allow tee property_socket:sock_file write;
 
 allow tee init:unix_stream_socket connectto;
