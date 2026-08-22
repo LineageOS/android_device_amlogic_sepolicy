@@ -7,10 +7,11 @@ allow init {
 allow init block_device:lnk_file { create unlink };
 
 allow init sysfs_bluetooth_writable:file r_file_perms;
-allow init sysfs_devices_block:file rw_file_perms;;
+allow init sysfs_devices_block:file rw_file_perms;
 allow init sysfs_leds:file r_file_perms;
 allow init sysfs_mmc_host:file rw_file_perms;
 allow init sysfs_mpgpu_cmd:file rw_file_perms;
+allow init sysfs_unifykeys:file rw_file_perms;
 allow init sysfs_usb:file rw_file_perms;
 
 allow init functionfs:dir mounton;
@@ -27,3 +28,6 @@ set_prop(init, vendor_hdmi_prop)
 allow init hwservicemanager:binder call;
 
 allow init kernel:system module_request;
+
+# neverallow - not needed anyway
+dontaudit init debugfs_mmc:file setattr;
