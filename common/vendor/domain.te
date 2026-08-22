@@ -1,0 +1,3 @@
+# Mirrors stock handling
+get_prop(domain, vendor_arm_gralloc_prop)
+get_prop(domain, vendor_arm_egl_configs_prop)
