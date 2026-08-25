@@ -10,6 +10,7 @@ vendor_public_prop(vendor_tee_prop);
 
 vendor_restricted_prop(vendor_arm_gralloc_prop);
 vendor_restricted_prop(vendor_arm_egl_configs_prop);
+vendor_restricted_prop(vendor_audio_prop);
 vendor_restricted_prop(vendor_bluetooth_prop);
 vendor_restricted_prop(vendor_dolby_prop);
 vendor_restricted_prop(vendor_hwc_prop);
