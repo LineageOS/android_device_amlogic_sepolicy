@@ -1,0 +1,9 @@
+type spk_mute, domain;
+type spk_mute_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(spk_mute)
+
+allow spk_mute audio_device:dir search;
+allow spk_mute audio_device:chr_file rw_file_perms;
+allow spk_mute shell_exec:file rx_file_perms;
+allow spk_mute system_file:file rx_file_perms;
