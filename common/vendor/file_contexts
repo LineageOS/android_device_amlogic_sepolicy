@@ -5,6 +5,7 @@
 /sys/class/audiodsp/dts_dec_control                  u:object_r:sysfs_audio:s0
 
 /vendor/bin/hw/android\.hardware\.audio(@[0-2]+\.[0-9]+)?[.-]service(-droidlogic)?    u:object_r:hal_audio_default_exec:s0
+/vendor/bin/tinymix                                                                   u:object_r:vendor_tinymix_exec:s0
 
 # Block Devices
 /dev/block/bootloader0              u:object_r:bootloader_block_device:s0
