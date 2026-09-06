@@ -8,3 +8,6 @@ allow system_app selinuxfs:file r_file_perms;
 
 get_prop(system_app, system_prop)
 get_prop(system_app, vendor_hdmi_prop)
+
+allow system_app ref_provision_hwservice:hwservice_manager find;
+binder_call(system_app, ref_provision)
