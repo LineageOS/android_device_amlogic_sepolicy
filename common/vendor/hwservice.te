@@ -2,6 +2,7 @@ type droidvold_hwservice, hwservice_manager_type;
 type hdmicecd_hwservice, hwservice_manager_type;
 type imageserver_hwservice, hwservice_manager_type;
 type meson_display_ipc_hwservice, hwservice_manager_type;
+type ref_provision_hwservice, hwservice_manager_type;
 type remotecontrol_hwservice, hwservice_manager_type;
 type screencontrol_hwservice, hwservice_manager_type;
 type systemcontrol_hwservice, hwservice_manager_type;
