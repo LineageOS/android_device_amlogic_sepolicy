@@ -210,6 +210,9 @@
 
 /vendor/bin/performance_settings                                 u:object_r:performance_settings_exec:s0
 
+# ref_provision
+/vendor/bin/ref_provision                 u:object_r:ref_provision_exec:s0
+
 # remotecfg
 /data/vendor/remotecfg(/.*)?                  u:object_r:vendor_remotecfg_data_file:s0
 

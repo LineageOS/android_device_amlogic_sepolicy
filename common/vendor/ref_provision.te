@@ -1,0 +1,6 @@
+type ref_provision, domain;
+type ref_provision_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(ref_provision)
+
+add_hwservice(ref_provision, ref_provision_hwservice)

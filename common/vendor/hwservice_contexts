@@ -8,3 +8,4 @@ vendor.amlogic.hardware.remotecontrol::IRemoteControl      u:object_r:remotecont
 vendor.amlogic.hardware.screencontrol::IScreenControl      u:object_r:screencontrol_hwservice:s0
 vendor.amlogic.hardware.systemcontrol::ISystemControl      u:object_r:systemcontrol_hwservice:s0
 vendor.amlogic.hardware.tvserver::ITvServer                u:object_r:tvserver_hwservice:s0
+vendor.ref.hardware.RefProvision::IRefProvision            u:object_r:ref_provision_hwservice:s0
