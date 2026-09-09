@@ -16,6 +16,24 @@
       "message": "tested on s922x (g12b) device. Resolves \n09-09 12:58:12.728   530   616 E hwc_di  : set frame err: ret \u003d-1",
       "revId": "f05f6600a9f2a2e897ae9fc392d5b2c3dba14c31",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9a25ba6f_ce23aa59",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17162
+      },
+      "writtenOn": "2026-09-09T15:25:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "48367d4a_36b3c6f2",
+      "revId": "f05f6600a9f2a2e897ae9fc392d5b2c3dba14c31",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
