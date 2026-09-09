@@ -1,5 +1,7 @@
 genfscon debugfs /ion/heaps/vmalloc_ion u:object_r:debugfs_system_ion_heap:s0
 
+genfscon dmabuf / u:object_r:dmabuf_system_fs:s0
+
 genfscon proc /kcore u:object_r:proc_iomem:s0
 
 genfscon proc /sys/kernel/panic_on_rcu_stall u:object_r:proc_softlockup:s0
