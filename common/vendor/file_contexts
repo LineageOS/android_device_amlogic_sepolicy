@@ -104,6 +104,14 @@
 /vendor/bin/hw/android\.hardware\.drm@1\.4-service\.playready            u:object_r:hal_drm_default_exec:s0
 /vendor/bin/hw/android\.hardware\.drm@1\.4-service\.widevine             u:object_r:hal_drm_default_exec:s0
 
+# DMA buf
+/dev/dma_heap/heap-cached-codecmm    u:object_r:dmabuf_system_heap_device:s0
+/dev/dma_heap/heap-codecmm           u:object_r:dmabuf_system_heap_device:s0
+/dev/dma_heap/heap-fb                u:object_r:dmabuf_system_heap_device:s0
+/dev/dma_heap/heap-gfx               u:object_r:dmabuf_system_heap_device:s0
+/dev/dma_heap/heap-secure            u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/heap-secure-codecmm    u:object_r:dmabuf_system_secure_heap_device:s0
+
 # Dumpstate
 /vendor/bin/hw/android\.hardware\.dumpstate(@1\.[0-9])?-service\.droidlogic u:object_r:hal_dumpstate_default_exec:s0
 
@@ -265,6 +273,7 @@
 # Video
 /dev/amvideo      u:object_r:vendor_video_device:s0
 /dev/amvideo_poll u:object_r:video_device:s0
+/dev/di_process.* u:object_r:vendor_video_device:s0
 /dev/tsync        u:object_r:vendor_video_device:s0
 
 /sys/module/amvideo/parameters(/.*)?  u:object_r:sysfs_video:s0
