@@ -1,0 +1,10 @@
+allow kernel dm_device:blk_file create_file_perms;
+allow kernel loop_device:blk_file create_file_perms;
+
+allow kernel device:blk_file {
+    create
+    getattr
+    setattr
+    unlink
+};
+

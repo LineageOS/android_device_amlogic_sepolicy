@@ -1,0 +1,2 @@
+allow vold tee_data_file:dir r_dir_perms;
+allow vold tee_data_file:dir ioctl;
