@@ -18,7 +18,7 @@ allow init functionfs:dir mounton;
 allow init mnt_vendor_file:dir mounton;
 allow init factory_file:dir mounton;
 allow init param_tv_file:dir mounton;
-allow init tee_data_file:dir mounton;
+allow init tee_file:dir mounton;
 
 set_prop(init, bluetooth_prop)
 set_prop(init, media_prop)

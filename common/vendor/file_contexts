@@ -39,6 +39,8 @@
 /dev/block/platform/soc/fe08c000\.mmc/by-name/userdata   u:object_r:userdata_block_device:s0
 
 /dev/dtb                            u:object_r:dtb_block_device:s0
+
+/dev/dm-[0-9]+                      u:object_r:dm_device:s0
 /dev/loop[0-9]+                     u:object_r:loop_device:s0
 /dev/mmcblk[0-9]rpmb                u:object_r:rpmb_block_device:s0
 
@@ -232,7 +234,7 @@
 /dev/teepriv0 u:object_r:tee_device:s0
 
 /mnt/vendor/factory(/.*)? u:object_r:factory_file:s0
-/mnt/vendor/tee(/.*)? u:object_r:tee_data_file:s0
+/mnt/vendor/tee(/.*)? u:object_r:tee_file:s0
 
 /vendor/bin/device_renew_key.bin u:object_r:tee_exec:s0
 /vendor/bin/generate_attestation_device_id u:object_r:tee_exec:s0
@@ -258,6 +260,7 @@
 /vendor/bin/hw/android\.hardware\.tv\.input-service                        u:object_r:hal_tv_input_default_exec:s0
 
 # USB
+/sys/devices/platform/c9100000.dwc2_a(/.*)?        u:object_r:sysfs_usb:s0
 /sys/devices/platform/ff400000.dwc2_a(/.*)?        u:object_r:sysfs_usb:s0
 /sys/devices/platform/c8838000.ddr_bandwidth/extcon/bandwidth/cable.0/name u:object_r:sysfs_usb:s0
 /vendor/bin/hw/android\.hardware\.usb(@1\.[0-9])?-service\.droidlogic         u:object_r:hal_usb_default_exec:s0
