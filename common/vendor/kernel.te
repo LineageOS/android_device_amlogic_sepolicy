@@ -9,3 +9,12 @@ dontaudit kernel device:dir { write create add_name remove_name rmdir };
 allow kernel vendor_firmware_gpu_file:file { open read };
 
 allow kernel device:chr_file getattr;
+
+# Legacy gxl compat
+allow kernel dm_device:blk_file create_file_perms;
+allow kernel loop_device:blk_file create_file_perms;
+
+allow kernel device:blk_file {
+    create
+    setattr
+};
