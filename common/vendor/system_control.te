@@ -64,3 +64,6 @@ vndbinder_use(system_control)
 allow system_control systemcontrol_hwservice:hwservice_manager { add find };
 
 allow system_control self:capability net_admin;
+
+dontaudit system_control default_prop:file r_file_perms;
+dontaudit system_control system_prop:file r_file_perms;
