@@ -3,7 +3,11 @@ allow system_server sysfs_amhdmitx:file r_file_perms;
 allow system_server sysfs_graphics_device:file r_file_perms;
 allow system_server sysfs_rtc:file r_file_perms;
 
+<<<<<<< HEAD   (9c1c8193f4d48e352f9c4306ac1f4fbd18aa1ae1 common: vendor: Label gxl /dev/loop path as loop_device)
 get_prop(system_server, vendor_dolby_prop)
 get_prop(system_server, wifi_hal_prop)
 
 dontaudit system_server vendor_default_prop:file r_file_perms;
+=======
+get_prop(system_server, wifi_hal_prop)
+>>>>>>> CHANGE (bbb621154a3655bfe8fcaaa45a84689a48567a51 common: vendor: Address GXL denials)

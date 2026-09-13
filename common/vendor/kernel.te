@@ -5,6 +5,11 @@ allow kernel system_bootstrap_lib_file:dir r_dir_perms;
 allow kernel system_bootstrap_lib_file:file r_file_perms;
 allow kernel self:capability mknod;
 
+<<<<<<< HEAD   (9c1c8193f4d48e352f9c4306ac1f4fbd18aa1ae1 common: vendor: Label gxl /dev/loop path as loop_device)
+=======
+dontaudit kernel device:dir { write create add_name remove_name rmdir };
+dontaudit kernel device:blk_file create_file_perms;
+>>>>>>> CHANGE (bbb621154a3655bfe8fcaaa45a84689a48567a51 common: vendor: Address GXL denials)
 allow kernel vendor_firmware_gpu_file:file { open read };
 allow kernel vendor_firmware_wifi_file:file { open read };
 
