@@ -31,6 +31,7 @@
 /dev/block/by-name/tee              u:object_r:tee_block_device:s0
 /dev/block/by-name/vbmeta           u:object_r:vbmeta_block_device:s0
 /dev/dtb                            u:object_r:dtb_block_device:s0
+/dev/loop[0-9]+                     u:object_r:loop_device:s0
 
 /sys/devices/platform/ffe07000.emmc/mmc_host/emmc/emmc:0001/block/mmcblk0(/.*)? u:object_r:sysfs_devices_block:s0
 /sys/devices/platform/ffe07000.emmc/mmc_host/emmc/emmc:0001(/.*)?               u:object_r:sysfs_devices_block:s0
