@@ -49,6 +49,7 @@ vendor.sys.hwc.booted               u:object_r:vendor_boot_prop:s0
 vendor.system.always.dolbyvision    u:object_r:vendor_dolby_prop:s0
 vendor.system.support.dolbyvision   u:object_r:vendor_dolby_prop:s0
 
+ro.odm.wl.                          u:object_r:vendor_wifi_prop:s0
 vendor.wlan.driver.version          u:object_r:vendor_wifi_prop:s0
 vendor.wlan.firmware.version        u:object_r:vendor_wifi_prop:s0
 
