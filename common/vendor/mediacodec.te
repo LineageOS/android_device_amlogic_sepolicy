@@ -1,26 +1,27 @@
 allow mediacodec display_device:file r_file_perms;
 allow mediacodec graphics_device:{ file chr_file } rw_file_perms;
 allow mediacodec amstream_device:{ file chr_file } rw_file_perms;
+allow mediacodec sysfs_amhdmitx:dir search;
 allow mediacodec sysfs_amhdmitx:file r_file_perms;
-allow mediacodec sysfs_amhdmitx:dir r_dir_perms;
+allow mediacodec sysfs_amvecm:dir search;
+allow mediacodec sysfs_amvecm:file rw_file_perms;
 allow mediacodec sysfs_aml_media:dir r_dir_perms;
 allow mediacodec sysfs_aml_media:file rw_file_perms;
+allow mediacodec sysfs_audio:file r_file_perms;
 allow mediacodec sysfs_graphics_device:dir r_dir_perms;
 allow mediacodec sysfs_graphics_device:file r_file_perms;
 allow mediacodec sysfs_media:file rw_file_perms;
-allow mediacodec sysfs_media:dir r_dir_perms;
-allow mediacodec sysfs_video:file rw_file_perms;
 allow mediacodec sysfs_video:dir r_dir_perms;
-allow mediacodec sysfs_xbmc:file rw_file_perms;
-allow mediacodec sysfs_xbmc:dir r_dir_perms;
+allow mediacodec sysfs_video:file rw_file_perms;
 allow mediacodec media_device:chr_file rw_file_perms;
 allow mediacodec media_device:file rw_file_perms;
 
-allow mediacodec tee_device:chr_file rw_file_perms;
-allow mediacodec tee_device:file rw_file_perms;
-allow mediacodec video_device:file rw_file_perms;
+allow mediacodec audio_device:chr_file rw_file_perms;
+allow mediacodec dmabuf_heap_device:chr_file rw_file_perms;
+allow mediacodec drm_device:chr_file rw_file_perms;
+allow mediacodec mediaproxy_device:chr_file rw_file_perms;
+allow mediacodec mediasync_device:chr_file rw_file_perms;
 allow mediacodec video_device:chr_file rw_file_perms;
-allow mediacodec vendor_video_device:chr_file rw_file_perms;
 
 hal_client_domain(mediacodec, hal_system_control)
 
