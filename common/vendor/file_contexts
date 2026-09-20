@@ -201,7 +201,10 @@
 /vendor/bin/hw/android\.hardware\.oemlock@1\.0-service\.droidlogic       u:object_r:hal_oemlock_default_exec:s0
 
 # Param
-/mnt/vendor/param(/.*)? u:object_r:param_tv_file:s0
+/odm_ext(/.*)?               u:object_r:param_tv_file:s0
+/param(/.*)?                 u:object_r:param_tv_file:s0
+/mnt/vendor/odm_ext(/.*)?    u:object_r:param_tv_file:s0
+/mnt/vendor/param(/.*)?      u:object_r:param_tv_file:s0
 
 # Power
 /sys/class/mpgpu(/.*)? u:object_r:sysfs_mpgpu_cmd:s0
