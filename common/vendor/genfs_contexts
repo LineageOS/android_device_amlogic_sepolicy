@@ -68,6 +68,7 @@ genfscon sysfs /devices/platform/fe010288.rtc/rtc/rtc0/alarmtimer.1.auto/wakeup 
 genfscon sysfs /devices/platform/fe010288.rtc/wakeup                               u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/fe044000.aocec/wakeup                             u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/fe084040.ir/wakeup                                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/fe340000.hifidsp0/wakeup                          u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/fdc00000.ethernet/wakeup                      u:object_r:sysfs_wakeup:s0
 
 genfscon sysfs /class/thermal                                             u:object_r:sysfs_thermal:s0
