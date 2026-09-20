@@ -227,6 +227,9 @@
 
 /vendor/bin/remotecfg                         u:object_r:remotecfg_exec:s0
 
+# resmanload
+/vendor/bin/resmanload       u:object_r:resmanload_exec:s0
+
 # RTC
 /sys/devices/platform/rtc/rtc/rtc0/hctosys u:object_r:sysfs_rtc:s0
 
