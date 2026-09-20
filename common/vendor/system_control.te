@@ -13,13 +13,17 @@ binder_call(hal_system_control_client, hal_system_control_server)
 binder_call(hal_system_control_server, hal_system_control_client)
 binder_call(system_control, platform_app)
 
-allow system_control amvecm_device:chr_file rw_file_perms;
 allow system_control block_device:dir r_dir_perms;
 allow system_control cri_data_block_device:blk_file rw_file_perms;
-allow system_control display_device:chr_file rw_file_perms;
-allow system_control display_device:file rw_file_perms;
 allow system_control env_block_device:blk_file rw_file_perms;
+allow system_control oemfs:dir r_dir_perms;
+
+allow system_control amvecm_device:chr_file rw_file_perms;
+allow system_control display_device:chr_file rw_file_perms;
 allow system_control graphics_device:chr_file rw_file_perms;
+allow system_control video_device:chr_file rw_file_perms;
+
+allow system_control display_device:file rw_file_perms;
 allow system_control graphics_device:file rw_file_perms;
 allow system_control mnt_vendor_file:dir r_dir_perms;
 allow system_control param_tv_file:dir rw_dir_perms;
@@ -37,7 +41,6 @@ allow system_control sysfs_hdmi:file r_file_perms;
 allow system_control sysfs_media:dir r_dir_perms;
 allow system_control sysfs_media:file rw_file_perms;
 allow system_control sysfs_power:file r_file_perms;
-allow system_control video_device:chr_file rw_file_perms;
 
 allow system_control meson_display_ipc_hwservice:hwservice_manager find;
 
