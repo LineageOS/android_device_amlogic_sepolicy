@@ -57,6 +57,11 @@
 
 /vendor/lib/libbt-vendor.so                                                u:object_r:same_process_hal_file:s0
 
+/dev/aml_coex                   u:object_r:device_stpbt:s0
+/dev/aml_thread                 u:object_r:device_stpbt:s0
+/dev/aml_zigbee                 u:object_r:device_stpbt:s0
+/dev/stpbt                      u:object_r:device_stpbt:s0
+
 /dev/ttyBT0         u:object_r:hci_attach_dev:s0
 /dev/ttyBT1         u:object_r:hci_attach_dev:s0
 

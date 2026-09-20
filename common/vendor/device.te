@@ -3,6 +3,7 @@ type amvecm_device, dev_type;
 type bootloader_block_device, dev_type;
 type cec_device, dev_type;
 type cri_data_block_device, dev_type;
+type device_stpbt, dev_type;
 type display_device, dev_type;
 type dtb_block_device, dev_type;
 type env_block_device, dev_type;

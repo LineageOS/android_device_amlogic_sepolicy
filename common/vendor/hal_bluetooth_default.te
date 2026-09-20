@@ -1,3 +1,5 @@
+allow hal_bluetooth_default device_stpbt:chr_file rw_file_perms;
+
 allow hal_bluetooth_default hci_attach_dev:file rw_file_perms;
 allow hal_bluetooth_default sysfs_bluetooth_writable:file rw_file_perms;
 
