@@ -242,7 +242,7 @@
 /dev/teepriv0 u:object_r:tee_device:s0
 
 /mnt/vendor/factory(/.*)? u:object_r:factory_file:s0
-/mnt/vendor/tee(/.*)? u:object_r:tee_file:s0
+/mnt/vendor/tee(/.*)? u:object_r:tee_vendor_file:s0
 
 /vendor/bin/device_renew_key.bin u:object_r:tee_exec:s0
 /vendor/bin/generate_attestation_device_id u:object_r:tee_exec:s0
