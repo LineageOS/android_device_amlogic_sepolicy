@@ -18,6 +18,9 @@ genfscon sysfs /class/tee_info               u:object_r:sysfs_tee_info:s0
 genfscon sysfs /devices/platform/bt-dev/rfkill/rfkill0/state u:object_r:sysfs_bluetooth_writable:s0
 genfscon sysfs /devices/platform/aml_bt/rfkill/rfkill0/state u:object_r:sysfs_bluetooth_writable:s0
 
+genfscon sysfs /devices/virtual/astream/astream-dev    u:object_r:sysfs_astream:s0
+genfscon sysfs /class/astream                          u:object_r:sysfs_astream:s0
+
 genfscon sysfs /devices/platform/0.amhdmitx/extcon                                                                  u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/ff638000.ddr_bandwidth/extcon/bandwidth/cable.0/name                               u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/soc/ff642000.audiobus/ff642000.audiobus:spdif/extcon/spdifin_event/cable.0/name    u:object_r:sysfs_extcon:s0
