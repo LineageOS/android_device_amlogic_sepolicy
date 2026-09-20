@@ -13,6 +13,7 @@ type reserved_block_device, dev_type;
 type rpmb_block_device, dev_type;
 type rsv_block_device, dev_type;
 type sda_block_device, dev_type;
+type stpbt_device, dev_type;
 type tee_block_device, dev_type;
 type vbmeta_block_device, dev_type;
 type vendor_video_device, dev_type;
