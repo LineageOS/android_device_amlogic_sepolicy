@@ -7,12 +7,8 @@ allow mediacodec sysfs_aml_media:dir r_dir_perms;
 allow mediacodec sysfs_aml_media:file rw_file_perms;
 allow mediacodec sysfs_graphics_device:dir r_dir_perms;
 allow mediacodec sysfs_graphics_device:file r_file_perms;
-allow mediacodec sysfs_media:file rw_file_perms;
-allow mediacodec sysfs_media:dir r_dir_perms;
-allow mediacodec sysfs_video:file rw_file_perms;
 allow mediacodec sysfs_video:dir r_dir_perms;
-allow mediacodec sysfs_xbmc:file rw_file_perms;
-allow mediacodec sysfs_xbmc:dir r_dir_perms;
+allow mediacodec sysfs_video:file rw_file_perms;
 allow mediacodec media_device:chr_file rw_file_perms;
 allow mediacodec media_device:file rw_file_perms;
 
