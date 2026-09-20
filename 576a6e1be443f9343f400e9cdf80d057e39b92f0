@@ -34,6 +34,24 @@
       "parentUuid": "48520b97_8578b2bf",
       "revId": "576a6e1be443f9343f400e9cdf80d057e39b92f0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "14126380_8711b536",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-09-20T21:07:10Z",
+      "side": 1,
+      "message": "No, the idea is to become the same name as reference sepolicy, otherwise I would leave it as is.",
+      "parentUuid": "ebf803b2_afe0bcc8",
+      "revId": "576a6e1be443f9343f400e9cdf80d057e39b92f0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
