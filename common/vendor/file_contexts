@@ -1,8 +1,13 @@
 # Audio
-/dev/hidraw[0-9]*                                    u:object_r:hidraw_audio_device:s0
-/sys/class/hidraw                                    u:object_r:sysfs_hidraw:s0
+/dev/hidraw[0-9]*    u:object_r:hidraw_audio_device:s0
+
 /sys/class/audiodsp/ac3_drc_control                  u:object_r:sysfs_audio:s0
+/sys/class/audiodsp/audio_samesource                 u:object_r:sysfs_audio_samesource:s0
+/sys/class/audiodsp/codec_fatal_err                  u:object_r:sysfs_audio:s0
+/sys/class/audiodsp/digital_codec                    u:object_r:sysfs_digital_codec:s0
+/sys/class/audiodsp/digital_raw                      u:object_r:sysfs_audio:s0
 /sys/class/audiodsp/dts_dec_control                  u:object_r:sysfs_audio:s0
+/sys/class/hidraw                                    u:object_r:sysfs_hidraw:s0
 
 /vendor/bin/hw/android\.hardware\.audio(@[0-2]+\.[0-9]+)?[.-]service(-droidlogic)?    u:object_r:hal_audio_default_exec:s0
 /vendor/bin/tinymix                                                                   u:object_r:vendor_tinymix_exec:s0
@@ -83,22 +88,20 @@
 /dev/videotunnel          u:object_r:graphics_device:s0
 
 /sys/class/amdolby_vision(/.*)?                               u:object_r:sysfs_graphics_device:s0
-/sys/module/amdolby_vision/parameters(/.*)?        u:object_r:sysfs_graphics_device:s0
 /sys/class/display/mode                                       u:object_r:sysfs_graphics_device:s0
-/sys/class/vfm/map                                            u:object_r:sysfs_graphics_device:s0
-/sys/class/video/device_resolution                            u:object_r:sysfs_graphics_device:s0
-/sys/class/video/frame_height                                 u:object_r:sysfs_graphics_device:s0
 /sys/class/video_poll/frame_height                            u:object_r:sysfs_graphics_device:s0
 /sys/devices/platform/(meson-)fb/graphics/fb[0-9]/blank       u:object_r:sysfs_graphics_device:s0
 /sys/devices/platform/(meson-)fb/graphics/fb[0-9]/free_.*     u:object_r:sysfs_graphics_device:s0
 /sys/devices/platform/(meson-)fb/graphics/fb[0-9]/osd_.*      u:object_r:sysfs_graphics_device:s0
 /sys/devices/platform/(meson-)fb/graphics/fb[0-9]/window_axis u:object_r:sysfs_graphics_device:s0
-/sys/module/amdolby_vision/parameters/dolby_vision_enable     u:object_r:sysfs_graphics_device:s0
-/sys/module/amdolby_vision/parameters/dolby_vision_ll_policy  u:object_r:sysfs_graphics_device:s0
 /sys/module/di/parameters(/.*)?                               u:object_r:sysfs_graphics_device:s0
 /sys/module/fb/parameters/osd_logo_index                      u:object_r:sysfs_graphics_device:s0
 
 # DRM
+/dev/tee0             u:object_r:drm_device:s0
+/dev/teepriv0         u:object_r:drm_device:s0
+/dev/tee_comm_hdcp    u:object_r:drm_device:s0
+
 /data/vendor/mediadrm(/.*)?                u:object_r:vendor_mediadrm_vendor_data_file:s0
 /data/vendor/mediadrm/IDM1013/L[1-3](/.*)? u:object_r:vendor_mediadrm_vendor_data_file:s0
 
@@ -114,9 +117,6 @@
 
 # Dumpstate
 /vendor/bin/hw/android\.hardware\.dumpstate(@1\.[0-9])?-service\.droidlogic u:object_r:hal_dumpstate_default_exec:s0
-
-# ESM
-/dev/esm u:object_r:esm_device:s0
 
 # Gatekeeper
 /vendor/bin/hw/android\.hardware\.gatekeeper@1\.0-service.software u:object_r:hal_gatekeeper_default_exec:s0
@@ -144,15 +144,37 @@
 /vendor/lib/firmware/video/video_ucode.bin                                    u:object_r:vendor_firmware_gpu_file:s0
 
 # HDCP
-/vendor/bin/hdcp_tx22 u:object_r:hdcp_tx22_exec:s0
+/dev/esm      u:object_r:hdcptx_device:s0
+/dev/esm_rx   u:object_r:hdcprx_device:s0
+
+/(odm|vendor)/bin/hdcp_tx22    u:object_r:hdcp_tx22_exec:s0
 
 # HDMI
 /dev/amhdmitx[0-9]*    u:object_r:amhdmitx_device:s0
 
-/sys/devices/virtual/amhdmitx/amhdmitx0(/.*)?      u:object_r:sysfs_amhdmitx:s0
 /sys/class/amstream/vcodec_profile                 u:object_r:sysfs_graphics_device:s0
-/sys/class/video(/.*)?                             u:object_r:sysfs_graphics_device:s0
 /sys/module/hdmitx20/parameters/hdmi_authenticated u:object_r:sysfs_hdmi:s0
+
+/sys/class/amhdmitx/amhdmitx0/avmute               u:object_r:sysfs_amhdmitx:s0
+/sys/class/amhdmitx/amhdmitx0/clkmsr               u:object_r:sysfs_amhdmitx:s0
+/sys/class/amhdmitx/amhdmitx0/disp_cap             u:object_r:sysfs_amhdmitx:s0
+/sys/class/amhdmitx/amhdmitx0/edid_parsing         u:object_r:sysfs_amhdmitx:s0
+/sys/class/amhdmitx/amhdmitx0/hdcp_mode            u:object_r:sysfs_amhdmitx:s0
+/sys/class/amhdmitx/amhdmitx0/hdmirx_info          u:object_r:sysfs_amhdmitx:s0
+/sys/class/amhdmitx/amhdmitx0/hdmitx_cur_status    u:object_r:sysfs_amhdmitx:s0
+/sys/class/amhdmitx/amhdmitx0/hdr_cap              u:object_r:sysfs_amhdmitx:s0
+/sys/class/amhdmitx/amhdmitx0/sink_type            u:object_r:sysfs_amhdmitx:s0
+/sys/devices/platform/0.amhdmitx(/.*)?             u:object_r:sysfs_amhdmitx:s0
+/sys/devices/platform/ffd00000.amhdmitx(/.*)?      u:object_r:sysfs_amhdmitx:s0
+/sys/devices/platform/ff000000.amhdmitx(/.*)?      u:object_r:sysfs_amhdmitx:s0
+/sys/devices/platform/ff800000.amhdmitx(/.*)?      u:object_r:sysfs_amhdmitx:s0
+
+/sys/devices/virtual/amhdmitx/amhdmitx0(/.*)                    u:object_r:sysfs_cec:s0
+/sys/devices/virtual/amhdmitx/amhdmitx0(/.*)?                   u:object_r:sysfs_amhdmitx:s0
+/sys/devices/virtual/amhdmitx/amhdmitx0/aud_cap                 u:object_r:sysfs_audio_cap:s0
+/sys/devices/virtual/amhdmitx/amhdmitx0/aud_output_chs          u:object_r:sysfs_aud_output_chs:s0
+/sys/devices/virtual/amhdmitx/amhdmitx0/edid_info               u:object_r:sysfs_cec:s0
+/sys/devices/virtual/amhdmitx/amhdmitx0/hdmi_audio/state        u:object_r:sysfs_hdmi:s0
 
 # Health
 /sys/devices/platform/dummy-battery/power_supply/Battery(/.*)                                                   u:object_r:sysfs_batteryinfo:s0
@@ -179,7 +201,7 @@
 /vendor/bin/modules_load    u:object_r:modules_load_exec:s0
 
 # Media
-/vendor/bin/hw/android\.hardware\.media\.c2@[0-9]\.[0-9]-service    u:object_r:mediacodec_exec:s0
+/vendor/bin/hw/android\.hardware\.media\.c2@1\.[0-9]-service    u:object_r:mediacodec_exec:s0
 
 /dev/aml_dsm        u:object_r:video_device:s0
 /dev/amresource_mgr u:object_r:video_device:s0
@@ -193,9 +215,11 @@
 /dev/v4lvideo       u:object_r:video_device:s0
 /dev/vdin[0-1]      u:object_r:video_device:s0
 
+/sys/class/codec_mm/config                           u:object_r:sysfs_media:s0
 /sys/class/codec_mm/tvp_enable                       u:object_r:sysfs_media:s0
-/sys/module/am_vecm/parameters(/.*)?                 u:object_r:sysfs_media:s0
-/sys/module/amvdec_(.*)/parameters(/.*)?              u:object_r:sysfs_media:s0
+
+/sys/module/am_vecm/parameters(/.*)?                 u:object_r:sysfs_amvecm:s0
+/sys/module/amvdec_(.*)/parameters(/.*)?             u:object_r:sysfs_amvdec:s0
 
 # Memtrack
 /vendor/bin/hw/android\.hardware\.memtrack-service\.droidlogic           u:object_r:hal_memtrack_default_exec:s0
@@ -240,9 +264,7 @@
 /vendor/bin/systemcontrol u:object_r:system_control_exec:s0
 
 # TEE
-/dev/secmem   u:object_r:tee_device:s0
-/dev/tee0     u:object_r:tee_device:s0
-/dev/teepriv0 u:object_r:tee_device:s0
+/dev/otz_client    u:object_r:tee_device:s0
 
 /mnt/vendor/factory(/.*)? u:object_r:factory_file:s0
 /mnt/vendor/tee(/.*)? u:object_r:tee_vendor_file:s0
@@ -278,11 +300,31 @@
 /vendor/bin/hw/android\.hardware\.usb\.gadget(@1\.[1-2])?-service\.droidlogic u:object_r:hal_usb_gadget_default_exec:s0
 
 # Video
-/dev/amvideo      u:object_r:vendor_video_device:s0
-/dev/amvideo_poll u:object_r:video_device:s0
-/dev/tsync        u:object_r:vendor_video_device:s0
+/dev/amvideo         u:object_r:video_device:s0
+/dev/amvideo_poll    u:object_r:video_device:s0
+/dev/secmem          u:object_r:video_device:s0
+/dev/tsync           u:object_r:video_device:s0
 
-/sys/module/amvideo/parameters(/.*)?  u:object_r:sysfs_video:s0
+/sys/class/amvecm(/.*)?                                         u:object_r:sysfs_video:s0
+/sys/class/ionvideo(/.*)?                                       u:object_r:sysfs_video:s0
+/sys/class/tsync/enable                                         u:object_r:sysfs_video:s0
+/sys/class/vdec/core                                            u:object_r:sysfs_video:s0
+/sys/class/vfm/map                                              u:object_r:sysfs_video:s0
+/sys/class/video(/.*)?                                          u:object_r:sysfs_video:s0
+/sys/class/video/axis                                           u:object_r:sysfs_video:s0
+/sys/class/video/axis_pip                                       u:object_r:sysfs_video:s0
+/sys/class/video/disable_video                                  u:object_r:sysfs_video:s0
+/sys/class/video/disable_videopip                               u:object_r:sysfs_video:s0
+/sys/class/video/video_scaler_path_sel                          u:object_r:sysfs_video:s0
+
+/sys/class/video/hdmin_delay_duration                           u:object_r:sysfs_avsync:s0
+/sys/class/video/hdmin_delay_max_ms                             u:object_r:sysfs_avsync:s0
+/sys/class/video/hdmin_delay_start                              u:object_r:sysfs_avsync:s0
+/sys/class/video/vframe_walk_delay                              u:object_r:sysfs_avsync:s0
+
+/sys/module/amdolby_vision/parameters(/.*)?                     u:object_r:sysfs_video:s0
+/sys/module/amvideo/parameters(/.*)?                            u:object_r:sysfs_video:s0
+/sys/module/tvin_afe/parameters/force_nostd                     u:object_r:sysfs_video:s0
 
 # Wi-Fi
 /vendor/lib/firmware/wlan/cfg.dat         u:object_r:vendor_firmware_wifi_file:s0
@@ -294,7 +336,12 @@
 # XBMC
 /dev/ttyS[1-2] u:object_r:hci_attach_dev:s0
 
-/sys/class/tsync(/.*)?     u:object_r:sysfs_xbmc:s0
+/sys/class/tsync/event         u:object_r:sysfs_xbmc:s0
+/sys/class/tsync/firstapts     u:object_r:sysfs_xbmc:s0
+/sys/class/tsync/firstvpts     u:object_r:sysfs_xbmc:s0
+/sys/class/tsync/pts_audio     u:object_r:sysfs_xbmc:s0
+/sys/class/tsync/pts_pcrscr    u:object_r:sysfs_xbmc:s0
+/sys/class/tsync/pts_video     u:object_r:sysfs_xbmc:s0
 
 # ZRAM
 /dev/block/zram0 u:object_r:swap_block_device:s0
