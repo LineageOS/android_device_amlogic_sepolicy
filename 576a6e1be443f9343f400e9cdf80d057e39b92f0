@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "48520b97_8578b2bf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-09-20T20:57:58Z",
+      "side": 1,
+      "message": "`mnt_tee_vendor_file` more accurate?\n\nshould mirror same whichever way for param file too",
+      "revId": "576a6e1be443f9343f400e9cdf80d057e39b92f0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
