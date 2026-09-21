@@ -1,3 +1,5 @@
+genfscon dmabuf / u:object_r:labeledfs:s0
+
 genfscon debugfs /ion/heaps/vmalloc_ion u:object_r:debugfs_system_ion_heap:s0
 
 genfscon proc /kcore u:object_r:proc_iomem:s0
