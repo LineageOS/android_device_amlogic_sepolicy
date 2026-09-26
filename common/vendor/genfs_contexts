@@ -62,6 +62,8 @@ genfscon sysfs /class/amvecm/enable_hdr10plus        u:object_r:sysfs_amvecm:s0
 
 genfscon sysfs /class/aml_wifi/power                 u:object_r:sysfs_wifi:s0
 
+genfscon sysfs /devices/platform/soc/fe03a080.usb3phy/usb_role/amlogic-usb-role-switch/role    u:object_r:sysfs_usb:s0
+
 genfscon sysfs /devices/platform/adc_keypad/wakeup                                 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/aml_wifi/wakeup                                   u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/fe010288.rtc/rtc/rtc0/alarmtimer.1.auto/wakeup    u:object_r:sysfs_wakeup:s0
