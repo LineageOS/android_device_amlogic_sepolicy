@@ -20,6 +20,11 @@ allow init factory_file:dir mounton;
 allow init param_tv_file:dir mounton;
 allow init tee_vendor_file:dir mounton;
 
+allow init dolby_ms12_mnt_file:dir mounton;
+allow init tmpfs:filesystem relabelfrom;
+allow init dolby_ms12_tmpfs:filesystem { mount remount relabelfrom relabelto };
+allow init dolby_ms12_tmpfs:dir { search getattr };
+
 set_prop(init, bluetooth_prop)
 set_prop(init, media_prop)
 set_prop(init, vendor_usb_prop)
