@@ -17,7 +17,9 @@ allow vendor_init rootfs:dir r_dir_perms;
 
 allow vendor_init oemfs:dir search;
 allow vendor_init proc_cmdline:file getattr;
+
 allow vendor_init vendor_file:system module_load;
+allow vendor_init vendor_overlay_file:system module_load;
 
 get_prop(vendor_init, bootvideo_prop)
 get_prop(vendor_init, persist_debug_prop)
