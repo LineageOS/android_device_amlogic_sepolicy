@@ -1,0 +1,18 @@
+type dolbyms12, domain;
+type dolbyms12_exec, exec_type, vendor_file_type, file_type;
+type dolbyms12_tmpfs, file_type;
+
+init_daemon_domain(dolbyms12)
+tmpfs_domain(dolbyms12)
+
+#type_transition dolbyms12 tmpfs:file vendor_public_lib_file "libdolbyms12.so";
+
+r_dir_file(dolbyms12, oemfs)
+
+allow dolbyms12 tmpfs:dir { write create open add_name };
+allow dolbyms12 tmpfs:file { read write create getattr open };
+allow dolbyms12 tmpfs:lnk_file create;
+allow dolbyms12 dolbyms12_tmpfs:file { create open };
+#allow dolbyms12 vendor_public_lib_file:file { create open write getattr };
+
+allow dolbyms12 dolby_fw_device:chr_file rw_file_perms;
