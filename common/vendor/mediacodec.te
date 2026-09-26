@@ -1,3 +1,5 @@
+permissive mediacodec;
+
 allow mediacodec display_device:file r_file_perms;
 allow mediacodec graphics_device:{ file chr_file } rw_file_perms;
 allow mediacodec amstream_device:{ file chr_file } rw_file_perms;
@@ -17,7 +19,11 @@ allow mediacodec media_device:chr_file rw_file_perms;
 allow mediacodec media_device:file rw_file_perms;
 
 allow mediacodec audio_device:chr_file rw_file_perms;
+allow mediacodec audio_utils_device:chr_file rw_file_perms;
 allow mediacodec dmabuf_heap_device:chr_file rw_file_perms;
+allow mediacodec dolby_fw_device:chr_file r_file_perms;
+allow mediacodec dolbyms12_tmpfs:file r_file_perms;
+#allow mediacodec vendor_public_lib_file:file rx_file_perms;
 allow mediacodec drm_device:chr_file rw_file_perms;
 allow mediacodec mediaproxy_device:chr_file rw_file_perms;
 allow mediacodec mediasync_device:chr_file rw_file_perms;

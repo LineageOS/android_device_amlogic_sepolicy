@@ -1,7 +1,15 @@
+permissive hal_audio_default;
+
+allow hal_audio_default audio_utils_device:chr_file rw_file_perms;
+allow hal_audio_default dolby_fw_device:chr_file rw_file_perms;
 allow hal_audio_default dmabuf_system_heap_device:chr_file rw_file_perms;
 allow hal_audio_default hidraw_audio_device:chr_file rw_file_perms;
 allow hal_audio_default mediasync_device:chr_file rw_file_perms;
 allow hal_audio_default ptsserver_device:chr_file rw_file_perms;
+
+allow hal_audio_default dolby_lib_file:file r_file_perms;
+allow hal_audio_default dolbyms12_tmpfs:file r_file_perms;
+allow hal_audio_default vendor_public_lib_file:file r_file_perms;
 
 allow hal_audio_default device:dir { read open };
 allow hal_audio_default mnt_vendor_file:dir search;
