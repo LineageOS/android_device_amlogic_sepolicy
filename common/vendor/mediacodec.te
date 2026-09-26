@@ -17,7 +17,12 @@ allow mediacodec media_device:chr_file rw_file_perms;
 allow mediacodec media_device:file rw_file_perms;
 
 allow mediacodec audio_device:chr_file rw_file_perms;
+allow mediacodec audio_utils_device:chr_file rw_file_perms;
 allow mediacodec dmabuf_heap_device:chr_file rw_file_perms;
+allow mediacodec dolby_fw_device:chr_file r_file_perms;
+allow mediacodec dolby_ms12_tmpfs:filesystem getattr;
+allow mediacodec dolby_ms12_tmpfs:dir search;
+allow mediacodec dolby_ms12_tmpfs:file { open getattr read map execute };
 allow mediacodec drm_device:chr_file rw_file_perms;
 allow mediacodec mediaproxy_device:chr_file rw_file_perms;
 allow mediacodec mediasync_device:chr_file rw_file_perms;
@@ -36,3 +41,6 @@ get_prop(mediacodec, vendor_hwc_prop)
 get_prop(mediacodec, vendor_netflix_prop)
 get_prop(mediacodec, vendor_platform_prop)
 set_prop(mediacodec, vendor_media_prop);
+
+# MS12 reads media.libplayer.dtsopt0, a legacy Amlogic player option that is never set
+dontaudit mediacodec default_prop:file r_file_perms;
