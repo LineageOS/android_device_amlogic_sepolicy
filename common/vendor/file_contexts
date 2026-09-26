@@ -8,35 +8,32 @@
 /vendor/bin/tinymix                                                                   u:object_r:vendor_tinymix_exec:s0
 
 # Block Devices
-/dev/block/bootloader0              u:object_r:bootloader_block_device:s0
-/dev/block/bootloader1              u:object_r:bootloader_block_device:s0
-/dev/block/by-name/boot             u:object_r:boot_block_device:s0
-/dev/block/by-name/bootloader       u:object_r:bootloader_block_device:s0
-/dev/block/by-name/cache            u:object_r:cache_block_device:s0
-/dev/block/by-name/cri_data         u:object_r:cri_data_block_device:s0
-/dev/block/by-name/data             u:object_r:userdata_block_device:s0
-/dev/block/by-name/dtbo             u:object_r:dtbo_block_device:s0
-/dev/block/by-name/env              u:object_r:env_block_device:s0
-/dev/block/by-name/factory          u:object_r:factory_block_device:s0
-/dev/block/by-name/frp              u:object_r:frp_block_device:s0
-/dev/block/by-name/logo             u:object_r:logo_block_device:s0
-/dev/block/by-name/metadata         u:object_r:metadata_block_device:s0
-/dev/block/by-name/misc             u:object_r:misc_block_device:s0
-/dev/block/by-name/mmcblk[0-9]      u:object_r:sda_block_device:s0
-/dev/block/by-name/mmcblk[0-9]rpmb  u:object_r:rpmb_block_device:s0
-/dev/block/by-name/mmcblk0p20       u:object_r:userdata_block_device:s0
-/dev/block/by-name/param            u:object_r:param_block_device:s0
-/dev/block/by-name/recovery         u:object_r:recovery_block_device:s0
-/dev/block/by-name/reserved         u:object_r:reserved_block_device:s0
-/dev/block/by-name/rsv              u:object_r:rsv_block_device:s0
-/dev/block/by-name/super            u:object_r:super_block_device:s0
-/dev/block/by-name/tee              u:object_r:tee_block_device:s0
-/dev/block/by-name/vbmeta           u:object_r:vbmeta_block_device:s0
-
-/dev/block/platform/soc/fe08c000\.mmc/by-name/boot       u:object_r:boot_block_device:s0
-/dev/block/platform/soc/fe08c000\.mmc/by-name/metadata   u:object_r:metadata_block_device:s0
-/dev/block/platform/soc/fe08c000\.mmc/by-name/misc       u:object_r:misc_block_device:s0
-/dev/block/platform/soc/fe08c000\.mmc/by-name/userdata   u:object_r:userdata_block_device:s0
+/dev/block/bootloader[0-1]                  u:object_r:bootloader_block_device:s0
+/dev/block/by-name/boot(_[ab])?             u:object_r:boot_block_device:s0
+/dev/block/by-name/bootloader(_[ab])?       u:object_r:bootloader_block_device:s0
+/dev/block/by-name/cache                    u:object_r:cache_block_device:s0
+/dev/block/by-name/cri_data                 u:object_r:cri_data_block_device:s0
+/dev/block/by-name/dt(_[ab])?               u:object_r:dtb_block_device:s0
+/dev/block/by-name/dtbo(_[ab])?             u:object_r:dtbo_block_device:s0
+/dev/block/by-name/env                      u:object_r:env_block_device:s0
+/dev/block/by-name/factory                  u:object_r:factory_block_device:s0
+/dev/block/by-name/frp                      u:object_r:frp_block_device:s0
+/dev/block/by-name/logo(_[ab])?             u:object_r:logo_block_device:s0
+/dev/block/by-name/metadata                 u:object_r:metadata_block_device:s0
+/dev/block/by-name/misc                     u:object_r:misc_block_device:s0
+/dev/block/by-name/mmcblk[0-9]              u:object_r:sda_block_device:s0
+/dev/block/by-name/mmcblk[0-9]rpmb          u:object_r:rpmb_block_device:s0
+/dev/block/by-name/mmcblk0p20               u:object_r:userdata_block_device:s0
+/dev/block/by-name/param                    u:object_r:param_block_device:s0
+/dev/block/by-name/recovery                 u:object_r:recovery_block_device:s0
+/dev/block/by-name/reserved                 u:object_r:reserved_block_device:s0
+/dev/block/by-name/rsv                      u:object_r:rsv_block_device:s0
+/dev/block/by-name/super                    u:object_r:super_block_device:s0
+/dev/block/by-name/tee                      u:object_r:tee_block_device:s0
+/dev/block/by-name/(user)?data              u:object_r:userdata_block_device:s0
+/dev/block/by-name/vbmeta(_[ab])?           u:object_r:vbmeta_block_device:s0
+/dev/block/by-name/vbmeta_system(_[ab])?    u:object_r:vbmeta_block_device:s0
+/dev/block/by-name/vendor_boot(_[ab])?      u:object_r:boot_block_device:s0
 
 /dev/dtb                            u:object_r:dtb_block_device:s0
 
