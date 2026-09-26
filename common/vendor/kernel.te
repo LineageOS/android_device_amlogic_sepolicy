@@ -11,6 +11,10 @@ dontaudit kernel device:blk_file create_file_perms;
 allow kernel vendor_firmware_gpu_file:file { open read };
 allow kernel vendor_firmware_wifi_file:file { open read };
 
+allow kernel dolby_lib_file:dir search;
+allow kernel dolby_lib_file:file relabelto;
+allow kernel dolbyms12_tmpfs:file relabelfrom;
+
 # For unlabeled firmware files in /vendor/firmware
 allow kernel vendor_file:file { open read };
 
