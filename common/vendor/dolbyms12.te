@@ -1,0 +1,20 @@
+type dolbyms12, domain;
+type dolbyms12_exec, exec_type, vendor_file_type, file_type;
+
+# Mount context of the tmpfs holding the decrypted Dolby MS12 library.
+# The library is written at boot and then loaded by the decoders,
+# which no file_type or fs_type may allow, so this type carries no attributes.
+type dolby_ms12_tmpfs;
+allow dolby_ms12_tmpfs self:filesystem associate;
+
+type dolby_ms12_mnt_file, file_type, vendor_file_type;
+
+init_daemon_domain(dolbyms12)
+
+# Decrypts /oem/lib/ms12/libdolbyms12.so through /dev/dolby_fw
+r_dir_file(dolbyms12, oemfs)
+
+allow dolbyms12 dolby_fw_device:chr_file rw_file_perms;
+
+allow dolbyms12 dolby_ms12_tmpfs:dir { search getattr open read write add_name };
+allow dolbyms12 dolby_ms12_tmpfs:file { create open getattr read write setattr };
