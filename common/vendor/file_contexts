@@ -1,4 +1,6 @@
 # Audio
+/dev/audio_utils                                     u:object_r:audio_utils_device:s0
+/dev/dolby_fw                                        u:object_r:dolby_fw_device:s0
 /dev/hidraw[0-9]*                                    u:object_r:hidraw_audio_device:s0
 
 /sys/class/audiodsp/ac3_drc_control                  u:object_r:sysfs_audio:s0
@@ -11,6 +13,13 @@
 
 /vendor/bin/hw/android\.hardware\.audio(@[0-2]+\.[0-9]+)?[.-]service(-droidlogic)?    u:object_r:hal_audio_default_exec:s0
 /vendor/bin/tinymix                                                                   u:object_r:vendor_tinymix_exec:s0
+
+/odm/lib/libHwAudio_dcvdec.so               u:object_r:dolby_lib_file:s0
+/odm/lib/libHwAudio_dtshd.so                u:object_r:dolby_lib_file:s0
+/odm/lib/libdolbyms12.so                    u:object_r:dolby_lib_file:s0
+/vendor/bin/dolby_fw_dolbyms12              u:object_r:dolbyms12_exec:s0
+/vendor/etc/ms12/libdolbyms12.so            u:object_r:dolby_lib_file:s0
+/vendor/lib/ms12/libdolbyms12.so            u:object_r:dolby_lib_file:s0
 
 # Block Devices
 /dev/block/bootloader[0-1]                  u:object_r:bootloader_block_device:s0
