@@ -25,10 +25,6 @@ allow hal_audio_default self:netlink_kobject_uevent_socket create_socket_perms_n
 # avc: denied { search } for name="audioserver" dev="mmcblk0p18" ino=169712 scontext=u:r:hal_audio_default:s0 tcontext=u:object_r:audioserver_data_file:s0 tclass=dir permissive=0
 dontaudit hal_audio_default audioserver_data_file:dir search;
 
-allow hal_audio_default property_socket:sock_file write;
-
-allow hal_audio_default init:unix_stream_socket connectto;
-
 allow hal_audio_default self:capability { ipc_lock };
 
 get_prop(hal_audio_default, media_prop)
