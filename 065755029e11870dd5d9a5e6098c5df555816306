@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "37c0f2fb_e2a61ef3",
+        "filename": "common/vendor/file.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-09-27T14:52:50Z",
+      "side": 1,
+      "message": "sysfs_type?",
+      "range": {
+        "startLine": 2,
+        "startChar": 32,
+        "endLine": 2,
+        "endChar": 42
+      },
+      "revId": "065755029e11870dd5d9a5e6098c5df555816306",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
