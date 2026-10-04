@@ -16,6 +16,24 @@
       "message": "Are you still testing this on 23?",
       "revId": "8cedd6c562ee0797ac859079655be3058cc9aead",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "86b48eef_fed2362f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32674
+      },
+      "writtenOn": "2026-10-04T08:34:34Z",
+      "side": 1,
+      "message": "I tested it on 24, but it should work on 23.2 as well.",
+      "parentUuid": "37450c7b_15c03270",
+      "revId": "8cedd6c562ee0797ac859079655be3058cc9aead",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
