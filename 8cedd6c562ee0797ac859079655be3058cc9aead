@@ -34,6 +34,23 @@
       "parentUuid": "37450c7b_15c03270",
       "revId": "8cedd6c562ee0797ac859079655be3058cc9aead",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ecc3b3fb_223c5445",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-10-04T08:40:42Z",
+      "side": 1,
+      "message": "Can you double check this, but rebased onto https://review.lineageos.org/c/LineageOS/android_device_amlogic_sepolicy/+/503723 ?",
+      "revId": "8cedd6c562ee0797ac859079655be3058cc9aead",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
