@@ -74,6 +74,7 @@ genfscon sysfs /devices/platform/fe044000.aocec/wakeup                          
 genfscon sysfs /devices/platform/fe084040.ir/wakeup                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/fe340000.hifidsp0/wakeup                          u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/fdc00000.ethernet/wakeup                      u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/fe330000.audiobus/fe330000.audiobus:vad/wakeup u:object_r:sysfs_wakeup:s0
 
 genfscon sysfs /class/thermal                                             u:object_r:sysfs_thermal:s0
 genfscon sysfs /devices/virtual/thermal                                   u:object_r:sysfs_thermal:s0
