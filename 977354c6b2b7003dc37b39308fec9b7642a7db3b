@@ -16,6 +16,24 @@
       "message": "On 24.0, log is full of this: \n10-04 13:46:05.006  1586  1586 W libc    : Access denied finding property \"media.resolution.limit.32bit\"\n10-04 13:46:05.006  1586  1586 W libc    : Access denied finding property \"media.resolution.limit.32bit\"\n10-04 13:46:05.006  1586  1586 W libc    : Access denied finding property \"media.resolution.limit.32bit\"\n10-04 13:46:05.006  1586  1586 W libc    : Access denied finding property \"media.resolution.limit.32bit\"\n10-04 13:46:05.006  1586  1586 W libc    : Access denied finding property \"media.resolution.limit.32bit\"\n10-04 13:46:05.000  1586  1586 I auditd  : type\u003d1400 audit(0.0:208): avc:  denied  { read } for  comm\u003d\"mediacodeclist_\" name\u003d\"u:object_r:media_config_prop:s0\" dev\u003d\"tmpfs\" ino\u003d295 scontext\u003du:r:mediacodeclist_generator:s0 tcontext\u003du:object_r:media_config_prop:s0 tclass\u003dfile permissive\u003d0\n10-04 13:46:05.000  1586  1586 W mediacodeclist_: type\u003d1400 audit(0.0:208): avc:  denied  { read } for  name\u003d\"u:object_r:media_config_prop:s0\" dev\u003d\"tmpfs\" ino\u003d295 scontext\u003du:r:mediacodeclist_generator:s0 tcontext\u003du:object_r:media_config_prop:s0 tclass\u003dfile permissive\u003d0",
       "revId": "977354c6b2b7003dc37b39308fec9b7642a7db3b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7bdb53c2_5d3a5c94",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-10-06T18:08:09Z",
+      "side": 1,
+      "message": "How, if I didn\u0027t even touch anything related to those props? That\u0027s new most likely.",
+      "parentUuid": "3d059bf4_e2e18679",
+      "revId": "977354c6b2b7003dc37b39308fec9b7642a7db3b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
