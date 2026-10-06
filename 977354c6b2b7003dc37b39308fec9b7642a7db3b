@@ -34,6 +34,24 @@
       "parentUuid": "3d059bf4_e2e18679",
       "revId": "977354c6b2b7003dc37b39308fec9b7642a7db3b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6d966e3d_f6f26575",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-10-06T18:11:51Z",
+      "side": 1,
+      "message": "Uhh, you were meant to pick this change and then your \"ref_provision\" one on top, not erase 24.0 history 😛. https://review.lineageos.org/c/LineageOS/android_device_amlogic_sepolicy/+/498164",
+      "parentUuid": "7bdb53c2_5d3a5c94",
+      "revId": "977354c6b2b7003dc37b39308fec9b7642a7db3b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
