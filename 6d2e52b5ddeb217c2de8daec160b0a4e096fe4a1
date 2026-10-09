@@ -16,6 +16,23 @@
       "message": "I might be dropping this as the binary itself does nothing and we are not shipping any playready HAL at all.",
       "revId": "6d2e52b5ddeb217c2de8daec160b0a4e096fe4a1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "65e13197_ccc4292f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-10-09T06:03:40Z",
+      "side": 1,
+      "message": "Revert the aml-common change as well.",
+      "revId": "6d2e52b5ddeb217c2de8daec160b0a4e096fe4a1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": [
