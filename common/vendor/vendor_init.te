@@ -36,3 +36,5 @@ set_prop(vendor_init, vendor_netflix_prop)
 set_prop(vendor_init, vendor_platform_prop)
 set_prop(vendor_init, vendor_tee_prop)
 set_prop(vendor_init, vendor_usb_prop)
+
+wakelock_use(vendor_init)
