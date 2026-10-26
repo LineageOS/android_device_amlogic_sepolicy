@@ -16,6 +16,23 @@
       "message": "tested on Deadpool where never allows are enforced.",
       "revId": "203c80a3bc5deed0f7fb4241d56862a530e1da5c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6bffd028_299824e9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-10-26T00:00:22Z",
+      "side": 1,
+      "message": "an equivalent is already in 23.2/24.0",
+      "revId": "203c80a3bc5deed0f7fb4241d56862a530e1da5c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": [
