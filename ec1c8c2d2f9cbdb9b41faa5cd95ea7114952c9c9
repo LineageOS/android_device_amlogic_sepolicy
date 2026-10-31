@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "deca5a12_2fc632a4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-10-31T16:55:15Z",
+      "side": 1,
+      "message": "device/amlogic/sepolicy/common/product/private/update_engine.te:1:ERROR \u0027unknown type bootloader_block_device\u0027 at token \u0027;\u0027 on line 100890:\n#line 1 \"device/amlogic/sepolicy/common/product/private/update_engine.te\"\nallow update_engine bootloader_block_device:blk_file { { getattr open read ioctl lock map watch watch_reads } { open append write lock map } };",
+      "revId": "ec1c8c2d2f9cbdb9b41faa5cd95ea7114952c9c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
