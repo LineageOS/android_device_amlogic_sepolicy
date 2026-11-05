@@ -7,3 +7,9 @@ allow performance_settings hdcptx_device:chr_file rw_file_perms;
 
 allow performance_settings sysfs_amhdmitx:dir r_dir_perms;
 allow performance_settings sysfs_amhdmitx:file rw_file_perms;
+
+allow performance_settings proc_interrupts:file r_file_perms;
+allow performance_settings self:capability dac_override;
+allow performance_settings vendor_proc_irq:dir search;
+allow performance_settings vendor_proc_irq:file w_file_perms;
+allow performance_settings vendor_toolbox_exec:file execute_no_trans;
