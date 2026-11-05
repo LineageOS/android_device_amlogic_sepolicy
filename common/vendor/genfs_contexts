@@ -72,6 +72,10 @@ genfscon sysfs /class/aml_wifi/power                 u:object_r:sysfs_wifi:s0
 genfscon sysfs /devices/platform/soc/fe03a080.usb3phy/usb_role/amlogic-usb-role-switch/role    u:object_r:sysfs_usb:s0
 
 genfscon sysfs /devices/platform/adc_keypad/wakeup                                 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/ff8000a8.rtc/rtc/rtc0/alarmtimer.1.auto/wakeup    u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/ff8000a8.rtc/wakeup                               u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/ffe03000.sdio/mmc_host/mmc2/mmc2:0001/mmc2:0001:2/wakeup   u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/ff660000.audiobus/ff660000.audiobus:vad/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/aml_wifi/wakeup                                   u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/fe010288.rtc/rtc/rtc0/alarmtimer.1.auto/wakeup    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/fe010288.rtc/wakeup                               u:object_r:sysfs_wakeup:s0
@@ -85,4 +89,5 @@ genfscon sysfs /class/thermal                                             u:obje
 genfscon sysfs /devices/virtual/thermal                                   u:object_r:sysfs_thermal:s0
 
 genfscon sysfs /devices/platform/d0074000.emmc/mmc_host/emmc/emmc:0001/block/mmcblk0/queue/discard_max_bytes        u:object_r:sysfs_mmc_host:s0
+genfscon sysfs /devices/platform/ffe07000.emmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/discard_max_bytes        u:object_r:sysfs_mmc_host:s0
 genfscon sysfs /devices/platform/soc/fe08c000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/discard_max_bytes     u:object_r:sysfs_mmc_host:s0

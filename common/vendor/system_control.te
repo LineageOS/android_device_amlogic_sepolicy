@@ -64,6 +64,9 @@ set_prop(system_control, vendor_display_prop)
 set_prop(system_control, vendor_dolby_prop)
 set_prop(system_control, vendor_hdmi_prop)
 set_prop(system_control, vendor_led_prop)
+
+allow system_control sysfs_tee_info:dir search;
+allow system_control sysfs_tee_info:file w_file_perms;
 set_prop(system_control, vendor_media_prop)
 set_prop(system_control, vendor_netflix_prop)
 set_prop(system_control, vendor_platform_prop)
