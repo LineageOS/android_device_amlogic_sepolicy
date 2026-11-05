@@ -44,6 +44,8 @@ allow system_control sysfs_graphics_device:dir r_dir_perms;
 allow system_control sysfs_graphics_device:file rw_file_perms;
 allow system_control sysfs_hdmi:file r_file_perms;
 allow system_control sysfs_power:file r_file_perms;
+allow system_control sysfs_tee_info:dir search;
+allow system_control sysfs_tee_info:file w_file_perms;
 allow system_control sysfs_video:dir search;
 allow system_control sysfs_video:file rw_file_perms;
 allow system_control sysfs_xbmc:file r_file_perms;
