@@ -45,3 +45,8 @@ set_prop(mediacodec, vendor_media_prop);
 
 # MS12 reads media.libplayer.dtsopt0, a legacy Amlogic player option that is never set
 dontaudit mediacodec default_prop:file r_file_perms;
+
+# DTS decoder opens /sys/class/amaudio/debug for writing and reads
+# persist.sys.dtsdecopt, debug options that are never set
+dontaudit mediacodec sysfs_audio:file write;
+dontaudit mediacodec system_prop:file r_file_perms;

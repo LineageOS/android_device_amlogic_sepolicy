@@ -3,6 +3,7 @@
 /dev/dolby_fw                                        u:object_r:dolby_fw_device:s0
 /dev/hidraw[0-9]*                                    u:object_r:hidraw_audio_device:s0
 
+/sys/class/amaudio/debug                             u:object_r:sysfs_audio:s0
 /sys/class/audiodsp/ac3_drc_control                  u:object_r:sysfs_audio:s0
 /sys/class/audiodsp/audio_samesource                 u:object_r:sysfs_audio_samesource:s0
 /sys/class/audiodsp/codec_fatal_err                  u:object_r:sysfs_audio:s0
