@@ -24,6 +24,9 @@ allow mediacodec mediasync_device:chr_file rw_file_perms;
 allow mediacodec ptsserver_device:chr_file rw_file_perms;
 allow mediacodec video_device:chr_file rw_file_perms;
 
+allow mediacodec oemfs:dir search;
+allow mediacodec oemfs:file r_file_perms;
+
 hal_client_domain(mediacodec, hal_system_control)
 
 get_prop(mediacodec, build_bootimage_prop);
