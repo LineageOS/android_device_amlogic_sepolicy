@@ -1,1 +1,3 @@
+r_dir_file(mediacodeclist_generator, oemfs)
+
 get_prop(mediacodeclist_generator, media_config_prop)
