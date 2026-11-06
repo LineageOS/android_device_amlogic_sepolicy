@@ -1,1 +1,4 @@
+allow mediacodeclist_generator oemfs:dir search;
+allow mediacodeclist_generator oemfs:file r_file_perms;
+
 get_prop(mediacodeclist_generator, media_config_prop)
