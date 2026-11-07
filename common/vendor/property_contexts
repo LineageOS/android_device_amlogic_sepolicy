@@ -7,8 +7,6 @@ persist.vendor.bluetooth.    u:object_r:vendor_bluetooth_prop:s0
 ro.vendor.autoconnectbt.     u:object_r:vendor_bluetooth_prop:s0
 vendor.wc_transport.         u:object_r:vendor_bluetooth_prop:s0
 
-ro.boot.oem.locales     u:object_r:vendor_boot_prop:s0
-
 ro.vendor.media.support_earc          u:object_r:vendor_hdmi_prop:s0
 persist.vendor.sys.arc_port           u:object_r:vendor_hdmi_prop:s0
 persist.vendor.sys.cec.               u:object_r:vendor_hdmi_prop:s0
