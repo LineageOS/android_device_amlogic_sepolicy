@@ -1,0 +1,1 @@
+allow vendor_proc_irq proc:filesystem associate;
