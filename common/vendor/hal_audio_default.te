@@ -36,6 +36,7 @@ dontaudit hal_audio_default audioserver_data_file:dir search;
 allow hal_audio_default self:capability { ipc_lock };
 
 get_prop(hal_audio_default, media_prop)
+get_prop(hal_audio_default, omx_prop)
 get_prop(hal_audio_default, vendor_hwc_prop)
 get_prop(hal_audio_default, vendor_media_prop)
 get_prop(hal_audio_default, vendor_platform_prop)
