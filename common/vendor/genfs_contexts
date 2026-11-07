@@ -23,6 +23,8 @@ genfscon sysfs /devices/platform/aml_bt/rfkill/rfkill0/state u:object_r:sysfs_bl
 genfscon sysfs /devices/virtual/astream/astream-dev    u:object_r:sysfs_astream:s0
 genfscon sysfs /class/astream                          u:object_r:sysfs_astream:s0
 
+genfscon sysfs /devices/platform/soc/ff800000.aobus/ff805000.i2c/i2c-4/4-004e/power_supply/tcpm-max-source-psy-4-004e    u:object_r:sysfs_batteryinfo:s0
+
 genfscon sysfs /devices/platform/0.amhdmitx/extcon                                                                  u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/c1100000.amhdmitx/extcon                                                           u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/ffd00000.amhdmitx/extcon                                                           u:object_r:sysfs_extcon:s0
