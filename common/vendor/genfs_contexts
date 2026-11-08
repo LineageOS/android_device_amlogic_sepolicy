@@ -90,6 +90,8 @@ genfscon sysfs /devices/platform/ff80023c.aocec/wakeup3                         
 genfscon sysfs /devices/platform/soc/fdc00000.ethernet/wakeup                      u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/fe330000.audiobus/fe330000.audiobus:vad/wakeup u:object_r:sysfs_wakeup:s0
 
+genfscon sysfs /class/remote0/amremote0/wakeup_key_event    u:object_r:sysfs_remote:s0
+
 genfscon sysfs /class/thermal                                             u:object_r:sysfs_thermal:s0
 genfscon sysfs /devices/virtual/thermal                                   u:object_r:sysfs_thermal:s0
 
