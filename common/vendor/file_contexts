@@ -253,9 +253,9 @@
 # remotecfg
 /data/vendor/remotecfg(/.*)?                  u:object_r:vendor_remotecfg_data_file:s0
 
-/dev/amremote                                 u:object_r:input_device:s0
+/dev/amremote[0-9]*                           u:object_r:input_device:s0
 
-/sys/devices/virtual/remote/amremote(/.*)?    u:object_r:sysfs_remotecfg:s0
+/sys/devices/virtual/remote/amremote(/.*)?    u:object_r:sysfs_remote:s0
 
 /vendor/bin/remotecfg                         u:object_r:remotecfg_exec:s0
 
