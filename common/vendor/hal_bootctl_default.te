@@ -1,3 +1,5 @@
+hal_client_domain(hal_bootctl_default, hal_system_control)
+
 # Traversal of /bin (a rootfs symlink to /system/bin) during early boot
 allow hal_bootctl_default rootfs:dir r_dir_perms;
 
