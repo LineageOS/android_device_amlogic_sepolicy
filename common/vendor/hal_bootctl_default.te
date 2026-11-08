@@ -9,5 +9,7 @@ allow hal_bootctl_default proc_sysrq:file w_file_perms;
 allow hal_bootctl_default sysfs_tee_info:dir search;
 allow hal_bootctl_default sysfs_tee_info:file rw_file_perms;
 
+hal_client_domain(hal_bootctl_default, hal_system_control)
+
 get_prop(hal_bootctl_default, boot_status_prop)
 get_prop(hal_bootctl_default, usb_control_prop)
