@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a64accc1_f414897f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 20
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-09T00:39:29Z",
+      "side": 1,
+      "message": "Fixed, but for some reason /dev/audio_utils had the correct permissions (0644) anyway.",
+      "revId": "469738d4caaf814bbbeca76ae08a67bceabac0dc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
