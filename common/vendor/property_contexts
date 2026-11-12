@@ -41,6 +41,7 @@ vendor.sys.hwc.        u:object_r:vendor_hwc_prop:s0
 vendor.sys.led_control              u:object_r:vendor_led_prop:s0
 
 ro.vendor.platform.                 u:object_r:vendor_platform_prop:s0
+vendor.sys.display.boot_complete    u:object_r:vendor_platform_prop:s0
 
 vendor.allm.support                 u:object_r:vendor_boot_prop:s0
 vendor.contenttype_game.support     u:object_r:vendor_hdmi_prop:s0
