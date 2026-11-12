@@ -21,6 +21,7 @@ type sysfs_avsync, fs_type, sysfs_type;
 type sysfs_cec, fs_type, sysfs_type;
 type sysfs_digital_codec, fs_type, sysfs_type;
 type sysfs_early_suspend, fs_type, sysfs_type;
+type sysfs_eth_wol, fs_type, sysfs_type;
 type sysfs_graphics_device, fs_type, sysfs_type;
 type sysfs_hdmi, fs_type, sysfs_type;
 type sysfs_hidraw, fs_type, sysfs_type;
