@@ -40,6 +40,8 @@ genfscon sysfs /devices/platform/vdin1/vdin/vdin1/vdin1event/cable.0/name       
 genfscon sysfs /devices/platform/vout/extcon/setmode/cable.0/name                                                   u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/vout2/extcon/setmode2/cable.0/name                                                 u:object_r:sysfs_extcon:s0
 
+genfscon sysfs /class/ethernet/wol u:object_r:sysfs_eth_wol:s0
+
 genfscon sysfs /devices/platform/soc/fdd00000.dwc2_a/udc                 u:object_r:sysfs_udc:s0
 
 genfscon sysfs /devices/platform/fe400000.bifrost/core_mask              u:object_r:sysfs_graphics_device:s0
