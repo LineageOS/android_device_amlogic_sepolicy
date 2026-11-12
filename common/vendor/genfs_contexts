@@ -79,6 +79,7 @@ genfscon sysfs /devices/platform/adc_keypad/wakeup                              
 genfscon sysfs /devices/platform/ff8000a8.rtc/rtc/rtc0/alarmtimer.1.auto/wakeup    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/ff8000a8.rtc/wakeup                               u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/ffe03000.sdio/mmc_host/mmc2/mmc2:0001/mmc2:0001:2/wakeup   u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/ffe05000.sd2/mmc_host/mmc2/mmc2:0001/mmc2:0001:2/wakeup    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/ff660000.audiobus/ff660000.audiobus:vad/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/aml_wifi/wakeup                                   u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/fe010288.rtc/rtc/rtc0/alarmtimer.1.auto/wakeup    u:object_r:sysfs_wakeup:s0
