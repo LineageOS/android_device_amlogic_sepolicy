@@ -18,6 +18,8 @@ vendor.display-size                   u:object_r:vendor_hdmi_prop:s0
 vendor.tv.dtv.                        u:object_r:vendor_hdmi_prop:s0
 vendor.sys.hdmi.                      u:object_r:vendor_hdmi_prop:s0
 
+ro.boot.oem.    u:object_r:vendor_oem_prop:s0
+
 vendor.after_tee_hdcp                           u:object_r:vendor_tee_prop:s0
 vendor.sys.cast_cert_provisioned                u:object_r:vendor_tee_prop:s0
 vendor.sys.cast_key_provisioned                 u:object_r:vendor_tee_prop:s0
