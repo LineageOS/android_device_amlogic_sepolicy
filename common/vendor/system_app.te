@@ -9,5 +9,6 @@ allow system_app sysfs_power:file r_file_perms;
 allow system_app selinuxfs:file r_file_perms;
 
 get_prop(system_app, system_prop)
+get_prop(system_app, vendor_bluetooth_prop)
 get_prop(system_app, vendor_hdmi_prop)
 get_prop(system_app, vendor_media_prop)

@@ -9,6 +9,10 @@ allow hal_bluetooth_default vendor_data_file:file create_file_perms;
 
 set_prop(hal_bluetooth_default, vendor_bluetooth_prop)
 
+allow hal_bluetooth_default self:udp_socket { bind setopt write };
+allow hal_bluetooth_default port:udp_socket name_bind;
+allow hal_bluetooth_default node:udp_socket node_bind;
+
 # This is a neverallow (somehow), but Bluetooth functions all work without it
 dontaudit hal_bluetooth_default self:udp_socket create;
 
