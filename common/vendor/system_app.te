@@ -10,4 +10,5 @@ allow system_app selinuxfs:file r_file_perms;
 
 get_prop(system_app, system_prop)
 get_prop(system_app, vendor_hdmi_prop)
+get_prop(system_app, vendor_media_prop)
 get_prop(system_app, vendor_platform_prop)
