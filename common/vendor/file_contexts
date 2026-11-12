@@ -196,15 +196,15 @@
 /vendor/bin/hw/android\.hardware\.security\.keymint-service.amlogic u:object_r:hal_keymint_default_exec:s0
 
 # Lights
-/vendor/bin/led_control_service                      u:object_r:hal_light_default_exec:s0
+/vendor/bin/led_control_service                                 u:object_r:hal_light_default_exec:s0
 
-/sys/devices/platform/gpioleds/leds/green/brightness u:object_r:sysfs_leds:s0
-/sys/devices/platform/gpioleds/leds/red/brightness   u:object_r:sysfs_leds:s0
+/sys/devices/platform/gpioleds/leds/green/brightness            u:object_r:sysfs_status_led:s0
+/sys/devices/platform/gpioleds/leds/red/brightness              u:object_r:sysfs_status_led:s0
 
-/sys/devices/platform/pwmleds/leds/yellow_led/brightness u:object_r:sysfs_leds:s0
-/sys/devices/platform/pwmleds/leds/sys_led/brightness    u:object_r:sysfs_leds:s0
-/sys/devices/platform/pwmleds/leds/yellow_led/max_brightness u:object_r:sysfs_leds:s0
-/sys/devices/platform/pwmleds/leds/sys_led/max_brightness    u:object_r:sysfs_leds:s0
+/sys/devices/platform/pwmleds/leds/yellow_led/brightness        u:object_r:sysfs_status_led:s0
+/sys/devices/platform/pwmleds/leds/sys_led/brightness           u:object_r:sysfs_status_led:s0
+/sys/devices/platform/pwmleds/leds/yellow_led/max_brightness    u:object_r:sysfs_status_led:s0
+/sys/devices/platform/pwmleds/leds/sys_led/max_brightness       u:object_r:sysfs_status_led:s0
 
 # Kernel Modules
 /vendor/bin/modules_load    u:object_r:modules_load_exec:s0
