@@ -270,6 +270,9 @@
 # RTC
 /sys/devices/platform/rtc/rtc/rtc0/hctosys u:object_r:sysfs_rtc:s0
 
+# SubtitleServer
+/vendor/bin/hw/subtitleserver    u:object_r:subtitleserver_exec:s0
+
 # System Control
 /vendor/bin/systemcontrol u:object_r:system_control_exec:s0
 
