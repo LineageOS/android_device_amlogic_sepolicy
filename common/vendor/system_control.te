@@ -70,6 +70,7 @@ set_prop(system_control, vendor_led_prop)
 set_prop(system_control, vendor_media_prop)
 set_prop(system_control, vendor_netflix_prop)
 set_prop(system_control, vendor_platform_prop)
+set_prop(system_control, vendor_tv_prop)
 
 vndbinder_use(system_control)
 
