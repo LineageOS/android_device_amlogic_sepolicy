@@ -7,3 +7,8 @@ allow hdcp_tx22 hdcptx_device:chr_file rw_file_perms;
 
 allow hdcp_tx22 sysfs_amhdmitx:dir search;
 allow hdcp_tx22 sysfs_amhdmitx:file rw_file_perms;
+
+allow hdcp_tx22 vendor_data_file:dir rw_dir_perms;
+type_transition hdcp_tx22 vendor_data_file:dir vendor_hdcp_data_file "hdcp";
+allow hdcp_tx22 vendor_hdcp_data_file:dir create_dir_perms;
+allow hdcp_tx22 vendor_hdcp_data_file:file create_file_perms;
