@@ -3,6 +3,23 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "8dfc4b4d_6da0c866",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-13T19:46:36Z",
+      "side": 1,
+      "message": "Split hdcp_tx22 rules plz",
+      "revId": "be3a23a99d42efc049020bef7c84df71b7d534fa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "fc6b2b66_37f41591",
         "filename": "common/vendor/hdcp_tx22.te",
         "patchSetId": 2
