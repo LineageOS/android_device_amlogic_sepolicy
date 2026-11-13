@@ -54,6 +54,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "c6c7274e_733d33ab",
+        "filename": "common/vendor/property_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-11-13T20:11:43Z",
+      "side": 1,
+      "message": "yeah, these didn\u0027t trigger before pulling this in, though, avc log was clean. Will split.",
+      "parentUuid": "7497b245_50bad27a",
+      "revId": "be3a23a99d42efc049020bef7c84df71b7d534fa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "a8a4591b_64b0b7ee",
         "filename": "common/vendor/property_contexts",
         "patchSetId": 2
@@ -65,6 +83,24 @@
       "writtenOn": "2026-11-13T19:47:12Z",
       "side": 1,
       "message": "subtitleserver related. :)",
+      "revId": "be3a23a99d42efc049020bef7c84df71b7d534fa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5913d610_31ccd487",
+        "filename": "common/vendor/property_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-11-13T20:11:43Z",
+      "side": 1,
+      "message": "yeah, these didn\u0027t trigger before pulling this in, though, avc log was clean. will split",
+      "parentUuid": "a8a4591b_64b0b7ee",
       "revId": "be3a23a99d42efc049020bef7c84df71b7d534fa",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
