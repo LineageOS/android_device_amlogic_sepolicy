@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "339b98b7_0ac3bff5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-13T20:48:38Z",
+      "side": 1,
+      "message": "Isn\u0027t this something you can pick from pixel policy?",
+      "revId": "e0217d2997adeb08b1f1f3dda2263b4a29981052",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
