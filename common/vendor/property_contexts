@@ -54,8 +54,10 @@ vendor.wlan.driver.version          u:object_r:vendor_wifi_prop:s0
 vendor.wlan.firmware.version        u:object_r:vendor_wifi_prop:s0
 
 persist.vendor.media.               u:object_r:vendor_media_prop:s0
+ro.vendor.subtitle.                 u:object_r:vendor_media_prop:s0
 vendor.drm.                         u:object_r:vendor_media_prop:s0
 vendor.media.                       u:object_r:vendor_media_prop:s0
+vendor.sys.subtitle.                u:object_r:vendor_media_prop:s0
 vendor.netflix.state                u:object_r:vendor_netflix_prop:s0
 ro.vendor.nrdp.                     u:object_r:vendor_netflix_prop:s0
 ro.vendor.usb.convport              u:object_r:vendor_usb_prop:s0
