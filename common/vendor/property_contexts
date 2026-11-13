@@ -40,8 +40,28 @@ vendor.sys.hwc.        u:object_r:vendor_hwc_prop:s0
 
 vendor.sys.led_control              u:object_r:vendor_led_prop:s0
 
-ro.vendor.platform.                 u:object_r:vendor_platform_prop:s0
-vendor.sys.display.boot_complete    u:object_r:vendor_platform_prop:s0
+ro.vendor.opa.device_model_id      u:object_r:vendor_opa_prop:s0
+
+persist.vendor.libbt_vendor             u:object_r:vendor_platform_prop:s0
+persist.vendor.sc.log.level             u:object_r:vendor_platform_prop:s0
+persist.vendor.sys.aipq.info            u:object_r:vendor_platform_prop:s0
+persist.vendor.sys.daylight.saving      u:object_r:vendor_platform_prop:s0
+persist.vendor.sys.dts.edid             u:object_r:vendor_platform_prop:s0
+persist.vendor.sys.dtsdrcscale          u:object_r:vendor_platform_prop:s0
+persist.vendor.sys.in.daylight.saving   u:object_r:vendor_platform_prop:s0
+persist.vendor.vadwake                  u:object_r:vendor_platform_prop:s0
+ro.vendor.cvbs_extern                   u:object_r:vendor_platform_prop:s0
+ro.vendor.platform.                     u:object_r:vendor_platform_prop:s0
+vendor.display.debug                    u:object_r:vendor_platform_prop:s0
+vendor.sys.bandwidth.                   u:object_r:vendor_platform_prop:s0
+vendor.sys.display.boot_complete        u:object_r:vendor_platform_prop:s0
+vendor.sys.open.deepcolor               u:object_r:vendor_platform_prop:s0
+vendor.sys.subtitleOption.              u:object_r:vendor_platform_prop:s0
+vendor.sys.subtitleService.             u:object_r:vendor_platform_prop:s0
+vendor.sys.tv.                          u:object_r:vendor_platform_prop:s0
+
+persist.vendor.tv.                  u:object_r:vendor_tv_prop:s0
+vendor.tv.                          u:object_r:vendor_tv_prop:s0
 
 vendor.allm.support                 u:object_r:vendor_boot_prop:s0
 vendor.contenttype_game.support     u:object_r:vendor_hdmi_prop:s0
