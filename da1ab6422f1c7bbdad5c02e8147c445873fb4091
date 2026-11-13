@@ -16,6 +16,24 @@
       "message": "I still doubt about it. Look at stock vendor_sepolicy.cil.",
       "revId": "da1ab6422f1c7bbdad5c02e8147c445873fb4091",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "031dca55_59ea2af0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-11-13T01:37:13Z",
+      "side": 1,
+      "message": "I\u0027m just going off of denials. You want me to 1:1 all allowances from stock?",
+      "parentUuid": "354849cb_5b0a740d",
+      "revId": "da1ab6422f1c7bbdad5c02e8147c445873fb4091",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
