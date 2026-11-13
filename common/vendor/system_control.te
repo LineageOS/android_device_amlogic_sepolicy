@@ -12,6 +12,7 @@ hwbinder_use(system_control)
 binder_call(hal_system_control_client, hal_system_control_server)
 binder_call(hal_system_control_server, hal_system_control_client)
 binder_call(system_control, platform_app)
+binder_call(system_control, system_app)
 
 allow system_control block_device:dir r_dir_perms;
 allow system_control cri_data_block_device:blk_file rw_file_perms;
@@ -70,6 +71,7 @@ set_prop(system_control, vendor_led_prop)
 set_prop(system_control, vendor_media_prop)
 set_prop(system_control, vendor_netflix_prop)
 set_prop(system_control, vendor_platform_prop)
+set_prop(system_control, vendor_tv_prop)
 
 vndbinder_use(system_control)
 

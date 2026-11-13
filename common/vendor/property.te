@@ -5,6 +5,7 @@ vendor_internal_prop(vendor_wifi_prop);
 
 vendor_public_prop(vendor_hdmi_prop);
 vendor_public_prop(vendor_led_prop);
+vendor_public_prop(vendor_opa_prop);
 vendor_public_prop(vendor_tee_prop);
 
 vendor_restricted_prop(vendor_arm_gralloc_prop);
@@ -16,3 +17,4 @@ vendor_restricted_prop(vendor_oem_prop);
 vendor_restricted_prop(vendor_media_prop);
 vendor_restricted_prop(vendor_netflix_prop);
 vendor_restricted_prop(vendor_platform_prop);
+vendor_restricted_prop(vendor_tv_prop);
