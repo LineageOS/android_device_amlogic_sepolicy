@@ -70,6 +70,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "32202b09_1ba0328e",
+        "filename": "common/vendor/property_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-11-13T20:41:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c6c7274e_733d33ab",
+      "revId": "be3a23a99d42efc049020bef7c84df71b7d534fa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a8a4591b_64b0b7ee",
@@ -101,6 +119,24 @@
       "side": 1,
       "message": "yeah, these didn\u0027t trigger before pulling this in, though, avc log was clean. will split",
       "parentUuid": "a8a4591b_64b0b7ee",
+      "revId": "be3a23a99d42efc049020bef7c84df71b7d534fa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "36bb3408_66635931",
+        "filename": "common/vendor/property_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-11-13T20:41:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5913d610_31ccd487",
       "revId": "be3a23a99d42efc049020bef7c84df71b7d534fa",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
