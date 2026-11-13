@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "354849cb_5b0a740d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-13T00:04:09Z",
+      "side": 1,
+      "message": "I still doubt about it. Look at stock vendor_sepolicy.cil.",
+      "revId": "da1ab6422f1c7bbdad5c02e8147c445873fb4091",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
