@@ -34,6 +34,24 @@
       "parentUuid": "354849cb_5b0a740d",
       "revId": "da1ab6422f1c7bbdad5c02e8147c445873fb4091",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e98280d2_a61d553c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-11-13T17:06:11Z",
+      "side": 1,
+      "message": "eh, we can add the policy as it comes. For now this stops then transition errors that spam.",
+      "parentUuid": "031dca55_59ea2af0",
+      "revId": "da1ab6422f1c7bbdad5c02e8147c445873fb4091",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
