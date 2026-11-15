@@ -31,10 +31,8 @@ set_prop(hal_graphics_composer_default, vendor_netflix_prop)
 
 vndbinder_use(hal_graphics_composer_default)
 
-# For ctl.start$hdcp_tx22/ctl.stop$hdcp_tx22 - service is not included anyway
-dontaudit hal_graphics_composer_default ctl_start_prop:file r_file_perms;
-dontaudit hal_graphics_composer_default ctl_stop_prop:file r_file_perms;
-dontaudit hal_graphics_composer_default ctl_start_prop:property_service set;
-dontaudit hal_graphics_composer_default ctl_stop_prop:property_service set;
+set_prop(hal_graphics_composer_default, ctl_start_prop)
+set_prop(hal_graphics_composer_default, ctl_stop_prop)
+
 dontaudit hal_graphics_composer_default system_prop:file r_file_perms;
 dontaudit hal_graphics_composer_default system_prop:property_service set;
