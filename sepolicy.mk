@@ -8,6 +8,10 @@ else ifneq ($(filter gxm gxl,$(TARGET_AMLOGIC_SOC)),)
 BOARD_VENDOR_SEPOLICY_DIRS += device/amlogic/sepolicy/gx/vendor
 endif
 
+ifeq ($(PRODUCT_IS_ATV),true)
+BOARD_VENDOR_SEPOLICY_DIRS += device/amlogic/sepolicy/atv/vendor
+endif
+
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/amlogic/sepolicy/common/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
