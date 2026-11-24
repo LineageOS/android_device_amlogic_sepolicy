@@ -16,6 +16,24 @@
       "message": "100% neverallow, tread carefully with this flag:\n```\nfreebox/nicepool/BoardConfig.mk:SELINUX_IGNORE_NEVERALLOWS :\u003d true\ngoogle/sabrina/BoardConfig.mk:SELINUX_IGNORE_NEVERALLOWS :\u003d true\naskey/wade/BoardConfig.mk:SELINUX_IGNORE_NEVERALLOWS :\u003d true\naskey/dopinder/BoardConfig.mk:SELINUX_IGNORE_NEVERALLOWS :\u003d true```\n\nNow that we are on 5.15, the few devices that set that should re-assess anyway",
       "revId": "a6b9f7d247cc8e573552a837c7337b03857f5eeb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0a36dc97_9c4f8e79",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3917
+      },
+      "writtenOn": "2026-11-24T19:44:47Z",
+      "side": 1,
+      "message": "ctl_start_prop, ctl_stop_prop should actually not hit neverallow.",
+      "parentUuid": "888765df_901baf12",
+      "revId": "a6b9f7d247cc8e573552a837c7337b03857f5eeb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
