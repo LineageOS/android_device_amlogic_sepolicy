@@ -1,5 +1,4 @@
-binder_use(system_app, system_control)
-allow system_app system_control:binder {call transfer};
+hal_client_domain(system_app, hal_system_control)
 
 allow system_app sysfs_amhdmitx:dir search;
 allow system_app sysfs_status_led:dir search;

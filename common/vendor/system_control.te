@@ -11,8 +11,6 @@ hwbinder_use(system_control)
 
 binder_call(hal_system_control_client, hal_system_control_server)
 binder_call(hal_system_control_server, hal_system_control_client)
-binder_call(system_control, platform_app)
-binder_call(system_control, system_app)
 
 allow system_control block_device:dir r_dir_perms;
 allow system_control cri_data_block_device:blk_file rw_file_perms;
@@ -74,8 +72,6 @@ set_prop(system_control, vendor_platform_prop)
 set_prop(system_control, vendor_tv_prop)
 
 vndbinder_use(system_control)
-
-allow system_control systemcontrol_hwservice:hwservice_manager { add find };
 
 allow system_control self:capability net_admin;
 
