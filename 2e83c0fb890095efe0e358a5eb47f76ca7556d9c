@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7747fba0_014816e5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 14
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-11-24T03:29:29Z",
+      "side": 1,
+      "message": "also remotecfg is patently broken rn. bumerc pointed out that our blobs calls for one node, kernel provides another, and the service doesn\u0027t work due to it, so we need to figure that out before we finalize policy on this.",
+      "revId": "2e83c0fb890095efe0e358a5eb47f76ca7556d9c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
