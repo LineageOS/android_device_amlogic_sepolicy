@@ -1,6 +1,8 @@
 hal_client_domain(system_app, hal_system_control)
 
 allow system_app sysfs_amhdmitx:dir search;
+allow system_app sysfs_early_suspend:dir search;
+allow system_app sysfs_early_suspend:file_r_file_perms;
 allow system_app sysfs_status_led:dir search;
 allow system_app sysfs_status_led:file rw_file_perms;
 allow system_app sysfs_power:file r_file_perms;
