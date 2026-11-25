@@ -52,6 +52,24 @@
       "parentUuid": "f002e15f_c58ac702",
       "revId": "b35cfa9233d89942c05674a6555aed903fb89659",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cb8e0f6d_7719c570",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 17
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-25T22:35:08Z",
+      "side": 1,
+      "message": "...or better saying, pointless.",
+      "parentUuid": "81ef597b_8311f537",
+      "revId": "b35cfa9233d89942c05674a6555aed903fb89659",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
