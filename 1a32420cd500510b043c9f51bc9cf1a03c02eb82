@@ -22,6 +22,30 @@
       },
       "revId": "1a32420cd500510b043c9f51bc9cf1a03c02eb82",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6959029b_738e8ae7",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-11-26T17:20:09Z",
+      "side": 1,
+      "message": "Fair catch. Hadn\u0027t been done yet.",
+      "parentUuid": "e0976694_cfed0a2f",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 81
+      },
+      "revId": "1a32420cd500510b043c9f51bc9cf1a03c02eb82",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
